@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maniquies Agustin - Backoffice</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -24,6 +28,8 @@
 
   <script src="./js/firebase.js"></script>
   <script defer src="./js/index.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,11 +46,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
 
-          <li class="nav-item">
+          <li class="nav-item logged-out"  style="display: block;">
             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item logged-in" style="display: none;">
+            <a class="nav-link" href="#" id="products">Productos</a>
+          </li>
+
+          <li class="nav-item logged-in" style="display: none;">
+            <a class="nav-link" href="#" id="configuration">Configuración del sitio</a>
+          </li>
+
+          <li class="nav-item logged-in" style="display: none;">
             <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
           </li>
 
@@ -55,9 +69,24 @@
 
   <!-- MAIN CONTENT -->
 
-  
+  <div class="container logged-out inicio">
+      <h1>Maniquíes Agustín</h1>
+  </div>
 
-  <!-- Modal -->
+  <div class="container">
+    <h2>Administrador de productos</h2>
+    <div class="spacer"></div>
+    <div class="actions container">
+        <button type="button" class="btn btn-success btn-large">Alta de nuevo producto</button>
+    </div>
+    <div class="productList">
+
+      <!-- Listado de productos -->
+
+    </div>
+  </div>
+
+  <!-- Modal Login -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -77,14 +106,16 @@
               <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña"
                 required>
             </div>
-            <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
-
+            <button type="submit" class="btn btn-secondary btn-large" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
           </form>
 
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Modal Producto -->
+
 </body>
 
 </html>
