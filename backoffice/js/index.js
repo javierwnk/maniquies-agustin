@@ -50,6 +50,9 @@ logout.addEventListener("click", e => {
     })
 })
 
+
+
+
 // Obtener datos de Firebase Firestore
 
 const productList = document.querySelector(".productList");
@@ -60,13 +63,13 @@ const setupProducts = data => {
         data.forEach(doc => {
             const product = doc.data()
             const card = `
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" id="${doc.id}" style="width: 18rem;">
                         <img src="${product.image}" class="card-img-top" alt="${product.name}">
                         <div class="card-body">
                             <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">${product.price}</p>
+                            <p class="card-text">$${product.price}</p>
                             <a href="#" class="btn btn-secondary">Editar</a>
-                            <a href="#" class="btn btn-danger">Eliminar</a>
+                            <a href="#" class="btn btn-danger" id="delete-btn" onclick="eliminarProducto('${doc.id}', '${product.name}')">Eliminar</a>
 
                         </div>
                     </div>`;
@@ -82,8 +85,38 @@ const setupProducts = data => {
     }
 }
 
+
+// Eliminación de productos
+
+function eliminarProducto(id, name) {
+    let m = confirm(`¿Está seguro que desea eliminar el producto ${name}? Esta acción no se puede revertir.`)
+    var card = document.getElementById(id);
+    if (m == 1) {
+        fs.collection("products").doc(id).delete()
+        .then(
+            eliminarCard(id),
+            toast("delete-toast")
+        )
+    }
+}
+
+    //Eliminación de card
+    function eliminarCard (id) {
+        let card = document.getElementById(id);
+        padre = card.parentNode,
+        padre.removeChild(card)
+    }
+
+    function toast(toast) {
+        let toastHTMLElement = document.getElementById(toast);
+        var toastElement = new bootstrap.Toast( toastHTMLElement, { animation: true, delay: 2000 } )
+
+        toastElement.show()
+    }
+
+
 // Events
-// list or auth state changes
+    // list or auth state changes
 
 auth.onAuthStateChanged(user => {
     if (user) {

@@ -36,3 +36,9 @@ h2 {
     background-color: #e5e5e5;
     margin: 20px 0px;
 }
+
+.toast-position {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
