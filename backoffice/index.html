@@ -25,6 +25,7 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
 
   <script src="./js/firebase.js"></script>
   <script defer src="./js/index.js"></script>
@@ -73,7 +74,7 @@
     <h1>Maniquíes Agustín</h1>
   </div>
 
-  <div class="container">
+  <div class="container logged-in" style="display: block;">
     <h2>Administrador de productos</h2>
     <div class="spacer"></div>
     <div class="actions container">
@@ -130,7 +131,7 @@
           <form class="form-group" id="alta-form">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre:</label>
-              <input type="name" name="name" id="name" class="form-control" placeholder="Nombre del producto" required>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Nombre del producto" required>
             </div>
             <div class="mb-3">
               <label for="description" class="form-label">Descripción:</label>
@@ -140,29 +141,46 @@
             <div class="row">
               <div class="mb-3 col">
                 <label for="material" class="form-label">Material:</label>
-                <input type="material" name="material" id="material" class="form-control"
+                <input type="text" name="material" id="material" class="form-control"
                   placeholder="Material de composición" required>
               </div>
               <div class="mb-3 col">
                 <label for="price" class="form-label">Precio:</label>
-                <input type="price" name="price" id="price" class="form-control" placeholder="Precio" required>
+                <input type="number" name="price" id="price" class="form-control" placeholder="Precio" required>
               </div>
             </div>
             <div class="mb-3">
               <label for="colors" class="form-label">Colores:</label>
-              <input type="colors" name="colors" id="colors" class="form-control" placeholder="Negro, Azul, Amarillo"
+              <input type="text" name="colors" id="colors" class="form-control" placeholder="Negro, Azul, Amarillo"
                 required>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01">Categoria Principal</label>
+              <select class="form-select" id="inputGroupSelect01" required>
+                <option selected>Seleccione</option>
+                <option value="maniquies">Maniquies</option>
+                <option value="modistas">Modistas</option>
+                <option value="equipamiento">Equipamiento comercial</option>
+              </select>
+            </div>
+            <div id="generoManiqui">
+
+            </div>
+
+            <div id="subcategoria">
+              
             </div>
             <div class="mb-3">
               <label for="formFile" class="form-label">Seleccione una imagen</label>
               <input class="form-control" type="file" id="formFile" required>
+              <p id="statusSubida"></p>
             </div>
           </form>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Cargar producto</button>
+          <button type="button" class="btn btn-primary disabled" id="cargarProd" data-bs-dismiss="modal">Cargar producto</button>
         </div>
       </div>
     </div>
@@ -181,6 +199,18 @@
         aria-label="Close"></button>
     </div>
   </div>
+
+  <div id="created-toast" class="toast align-items-center text-white bg-success border-0 toast-position" role="alert"
+  aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Producto creado correctamente
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+      aria-label="Close"></button>
+  </div>
+</div>
+
 
 </body>
 
