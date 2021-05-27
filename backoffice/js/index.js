@@ -63,7 +63,7 @@ const setupProducts = data => {
         data.forEach(doc => {
             const product = doc.data()
             const card = `
-                    <div class="card" id="${doc.id}" style="width: 18rem;">
+                    <div class="card" id="${doc.id}" style="width: 18rem; height: fit-content;">
                         <img src="${product.image}" class="card-img-top" alt="${product.name}">
                         <div class="card-body">
                             <h5 class="card-title">${product.name}</h5>
@@ -122,7 +122,7 @@ function toast(toast) {
 auth.onAuthStateChanged(user => {
     if (user) {
         // Consulta a firestore si está auth
-        fs.collection("products")
+        fs.collection("products").orderBy("name")
             .get()
             .then((snapshot) => {
                 setupProducts(snapshot.docs)

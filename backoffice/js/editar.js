@@ -11,6 +11,7 @@ let productoAEditar = {
     "gender": "",
     "secondCategory": ""
 }
+let imagenActual = ""
 
 let idProd = ""
 
@@ -20,6 +21,7 @@ function obtenerDatos(id) {
     .get()
     .then(doc => {
         completarForm(doc.data())
+        imagenActual = doc.data().image
         productoAEditar = doc.data()
     })
 }
@@ -148,8 +150,10 @@ function editarProducto() {
         productoAEditar.gender = document.getElementById("inputGroupSelect02-2").value
         productoAEditar.secondCategory = document.getElementById("inputGroupSelect03-2").value
 
-        if (productoAEditar.image != imagenUrl) {
+        if (imagenActual != imagenUrl) {
             productoAEditar.image = imagenUrl
+        } else {
+            productoAEditar.image = imagenActual
         }
 
         fs.doc("products/" + idProd).update({
