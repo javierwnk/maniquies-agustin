@@ -1,0 +1,39 @@
+.btn-principal {
+    display: block;
+    background: $black;
+    color: $white;
+    width: 297px;
+    height: 53px;
+    padding: 12px 24px;
+    border-radius: 3.69px;
+    box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.25);
+    text: {
+        align: center;
+        decoration: none;
+    }
+    line-height: 30px;
+
+}
+
+.btn-principal:hover {
+    color: $white;
+    box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.5);
+}
+
+.btn-card {
+    background: transparent;
+    color: $cream;
+    border: 1px solid $cream;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 166px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.btn-card:hover {
+    color: $cream;
+}

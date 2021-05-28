@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+  box-sizing: border-box; }
+
+h1 {
+  line-height: 34px;
+  font-weight: 600; }
+
+header {
+  height: 80px;
+  background: #1A1A19; }
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+  nav img {
+    height: auto;
+    width: 158px; }
+  nav .nav-item a {
+    color: #FCF8F3;
+    display: block;
+    height: 80px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 75px; }
+  nav .nav-item .cart-icon {
+    font-size: 19px; }
+
+.cartel-info {
+  background: #FCF8F3;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .cartel-info .iconify {
+    font-size: 24px !important;
+    margin-right: 10px !important;
+    vertical-align: -5px !important; }
+  .cartel-info p {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500; }
+
+.btn-principal {
+  display: block;
+  background: #1A1A19;
+  color: #FEFEFE;
+  width: 297px;
+  height: 53px;
+  padding: 12px 24px;
+  border-radius: 3.69px;
+  box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.25);
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px; }
+
+.btn-principal:hover {
+  color: #FEFEFE;
+  box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.5); }
+
+.btn-card {
+  background: transparent;
+  color: #FCF8F3;
+  border: 1px solid #FCF8F3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 166px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none; }
+
+.btn-card:hover {
+  color: #FCF8F3; }
+
+.card-list {
+  display: flex;
+  justify-content: space-between; }
+
+.card-categoria {
+  height: 464px;
+  width: 354px;
+  background-image: linear-gradient(180deg, rgba(26, 26, 25, 0) 19.79%, #1A1A19 73.44%), url("../images/maniquies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 5px 15px rgba(26, 26, 25, 0.15)); }
+  .card-categoria .card-content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; }
+    .card-categoria .card-content p {
+      padding: 0 27px;
+      color: #FCF8F3; }
+    .card-categoria .card-content .card-title {
+      font-size: 24px;
+      font-weight: 500; }
+    .card-categoria .card-content a {
+      margin: 0 auto;
+      font-weight: 500; }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px; }
+  .hero p {
+    display: block;
+    width: 85%;
+    margin-top: 18px; }

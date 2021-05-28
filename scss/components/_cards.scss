@@ -1,0 +1,42 @@
+.card-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-categoria {
+    height: 464px;
+    width: 354px;
+    background: {
+        image: linear-gradient(180deg, rgba(26, 26, 25, 0) 19.79%, #1A1A19 73.44%), url('../images/maniquies.png');
+        repeat: no-repeat;
+        size: cover;
+    }
+    
+    filter: drop-shadow(0px 5px 15px rgba(26, 26, 25, 0.15));
+
+    .card-content {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+
+        p {
+            padding: 0 27px;
+            color: $cream;
+            
+        }
+    
+        .card-title {
+            font: {
+                size: 24px;
+                weight: 500;
+            }
+        }
+
+        a {
+            margin: 0 auto;
+            font-weight: 500;
+        }
+    }
+
+}

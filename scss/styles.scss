@@ -1,0 +1,17 @@
+// Import base
+@import './base/reset'; // Se sacan Paddings, Margins, y se establece el font-size
+@import './base/variables'; // Estan declarados los colores de la paleta de colores a utilizar
+@import './base/headers'; // Se formatean las etiquetas de texto
+
+// Import layout
+
+@import './layout/header'; // Estilos del navbar
+@import './layout/cartel-info'; // Estilos cartel con información breve
+
+// Import components
+@import './components/buttons'; // Estilos de botones
+@import './components/cards'; // Estilos de cards
+
+
+// Import views
+@import './views/home'; // Estilos de la home
