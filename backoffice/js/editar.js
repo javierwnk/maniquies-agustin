@@ -150,7 +150,7 @@ function editarProducto() {
         productoAEditar.gender = document.getElementById("inputGroupSelect02-2").value
         productoAEditar.secondCategory = document.getElementById("inputGroupSelect03-2").value
 
-        if (imagenActual != imagenUrl) {
+        if (imagenUrl != "") {
             productoAEditar.image = imagenUrl
         } else {
             productoAEditar.image = imagenActual
