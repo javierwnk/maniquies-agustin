@@ -27,7 +27,7 @@ function subcategorias() {
             }
             document.getElementById("generoManiqui").innerHTML = `
             <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui</label>
+            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect02" required>
               <option selected>Seleccione</option>
               <option value="mujer">Mujer</option>
@@ -40,7 +40,7 @@ function subcategorias() {
 
             document.getElementById("subcategoria").innerHTML = `
             <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria</label>
+            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect03" required>
               <option selected>Seleccione</option>
               ${options}
@@ -53,7 +53,7 @@ function subcategorias() {
         case "modistas":
             document.getElementById("generoManiqui").innerHTML = `
             <div class="input-group mb-3" style="display: none">
-            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui</label>
+            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect02" required>
               <option value="null" selected>null</option>
             </select>
@@ -62,7 +62,7 @@ function subcategorias() {
 
             document.getElementById("subcategoria").innerHTML = `
             <div class="input-group mb-3" style="display: none">
-            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria</label>
+            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect03" required>
               <option value="null" selected>null</option>
             </select>
@@ -76,7 +76,7 @@ function subcategorias() {
             }
             document.getElementById("generoManiqui").innerHTML = `
             <div class="input-group mb-3" style="display: none">
-            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui</label>
+            <label class="input-group-text" for="inputGroupSelect02">Genero del Maniqui  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect02" required>
               <option value="null" selected>null</option>
             </select>
@@ -85,7 +85,7 @@ function subcategorias() {
 
             document.getElementById("subcategoria").innerHTML = `
             <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria</label>
+            <label class="input-group-text" for="inputGroupSelect03">Categoria Secundaria  <span class="requerido">*</span></label>
             <select class="form-select" id="inputGroupSelect03" required>
               <option selected>Seleccione</option>
               ${options}

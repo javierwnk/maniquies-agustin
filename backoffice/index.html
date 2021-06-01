@@ -129,36 +129,37 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
+          <h6 class="requerido">* Campos obligatorios</h6>
           <form class="form-group" id="alta-form">
             <div class="mb-3">
-              <label for="name" class="form-label">Nombre:</label>
+              <label for="name" class="form-label">Nombre <span class="requerido">*</span></label>
               <input type="text" name="name" id="name" class="form-control" placeholder="Nombre del producto" required>
             </div>
             <div class="mb-3">
-              <label for="description" class="form-label">Descripción:</label>
+              <label for="description" class="form-label">Descripción <span class="requerido">*</span></label>
               <textarea class="form-control" id="description" rows="3"
                 placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
                 required></textarea>
             </div>
             <div class="row">
               <div class="mb-3 col">
-                <label for="material" class="form-label">Material:</label>
+                <label for="material" class="form-label">Material <span class="requerido">*</span></label>
                 <input type="text" name="material" id="material" class="form-control"
                   placeholder="Material de composición" required>
               </div>
               <div class="mb-3 col">
-                <label for="price" class="form-label">Precio:</label>
+                <label for="price" class="form-label">Precio <span class="requerido">*</span></label>
                 <input type="number" name="price" id="price" class="form-control" placeholder="Precio" required>
               </div>
             </div>
             <div class="mb-3">
-              <label for="colors" class="form-label">Colores:</label>
+              <label for="colors" class="form-label">Colores <span class="requerido">*</span></label>
               <input type="text" name="colors" id="colors" class="form-control" placeholder="Negro, Azul, Amarillo"
                 required>
             </div>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect01">Categoria Principal</label>
+              <label class="input-group-text" for="inputGroupSelect01">Categoria Principal <span
+                  class="requerido">*</span></label>
               <select class="form-select" id="inputGroupSelect01" required>
                 <option selected>Seleccione</option>
                 <option value="maniquies">Maniquies</option>
@@ -177,46 +178,47 @@
               <div class="col-4" id="main-img">
 
               </div>
-                <div class="mb-4 col-8">
-                  <label for="portada" class="form-label">Seleccione imagen de portada</label>
-                  <input class="form-control" type="file" id="portada" required accept="image/*">
-                  <p id="statusSubida"></p>
-                </div>
+              <div class="mb-4 col-8">
+                <label for="portada" class="form-label">Seleccione imagen de portada <span
+                    class="requerido">*</span></label>
+                <input class="form-control" type="file" id="portada" required accept="image/*">
+                <p id="statusSubida"></p>
               </div>
+            </div>
 
-              <div class="row">
-                <div class="col-4" id="imagen-2">
+            <div class="row">
+              <div class="col-4" id="imagen-2">
 
-                </div>
-                <div class="mb-4 col-8">
-                  <label for="imagen2" class="form-label">Seleccione Imagen #2</label>
-                  <input class="form-control" type="file" id="imagen2" accept="image/*">
-                  <p id="statusImagen2"></p>
-                </div>
               </div>
-
-
-              <div class="row">
-                <div class="col-4" id="imagen-3">
-
-                </div>
-                <div class="mb-3 col-8">
-                  <label for="imagen3" class="form-label">Seleccione Imagen #3</label>
-                  <input class="form-control" type="file" id="imagen3" accept="image/*">
-                  <p id="statusImagen3"></p>
-                </div>
+              <div class="mb-4 col-8">
+                <label for="imagen2" class="form-label">Seleccione Imagen #2</label>
+                <input class="form-control" type="file" id="imagen2" accept="image/*">
+                <p id="statusImagen2"></p>
               </div>
+            </div>
 
-              <div class="row">
-                <div class="col-4" id="imagen-4">
 
-                </div>
-                <div class="mb-4 col-8">
-                  <label for="imagen4" class="form-label">Seleccione Imagen #4</label>
-                  <input class="form-control" type="file" id="imagen4" accept="image/*">
-                  <p id="statusImagen4"></p>
-                </div>
+            <div class="row">
+              <div class="col-4" id="imagen-3">
+
               </div>
+              <div class="mb-3 col-8">
+                <label for="imagen3" class="form-label">Seleccione Imagen #3</label>
+                <input class="form-control" type="file" id="imagen3" accept="image/*">
+                <p id="statusImagen3"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4" id="imagen-4">
+
+              </div>
+              <div class="mb-4 col-8">
+                <label for="imagen4" class="form-label">Seleccione Imagen #4</label>
+                <input class="form-control" type="file" id="imagen4" accept="image/*">
+                <p id="statusImagen4"></p>
+              </div>
+            </div>
           </form>
 
         </div>
@@ -240,37 +242,38 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
+          <h6 class="requerido">* Campos obligatorios</h6>
           <form class="form-group" id="edit-form">
             <div class="mb-3">
-              <label for="name2" class="form-label">Nombre:</label>
+              <label for="name2" class="form-label">Nombre <span class="requerido">*</span></label>
               <input type="text" name="name2" id="name2" class="form-control" placeholder="Nombre del producto"
                 required>
             </div>
             <div class="mb-3">
-              <label for="description2" class="form-label">Descripción:</label>
+              <label for="description2" class="form-label">Descripción <span class="requerido">*</span></label>
               <textarea class="form-control" id="description2" rows="3"
                 placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
                 required></textarea>
             </div>
             <div class="row">
               <div class="mb-3 col">
-                <label for="material2" class="form-label">Material:</label>
+                <label for="material2" class="form-label">Material <span class="requerido">*</span></label>
                 <input type="text" name="material2" id="material2" class="form-control"
                   placeholder="Material de composición" required>
               </div>
               <div class="mb-3 col">
-                <label for="price2" class="form-label">Precio:</label>
+                <label for="price2" class="form-label">Precio <span class="requerido">*</span></label>
                 <input type="number" name="price2" id="price2" class="form-control" placeholder="Precio" required>
               </div>
             </div>
             <div class="mb-3">
-              <label for="colors2" class="form-label">Colores:</label>
+              <label for="colors2" class="form-label">Colores <span class="requerido">*</span></label>
               <input type="text" name="colors2" id="colors2" class="form-control" placeholder="Negro, Azul, Amarillo"
                 required>
             </div>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect01-2">Categoria Principal</label>
+              <label class="input-group-text" for="inputGroupSelect01-2">Categoria Principal <span
+                  class="requerido">*</span></label>
               <select class="form-select" id="inputGroupSelect01-2" required>
                 <option selected>Seleccione</option>
                 <option value="maniquies">Maniquies</option>
@@ -280,7 +283,8 @@
             </div>
             <div id="generoManiqui2" style="display: none;">
               <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect02-2">Genero del Maniqui</label>
+                <label class="input-group-text" for="inputGroupSelect02-2">Genero del Maniqui <span
+                    class="requerido">*</span></label>
                 <select class="form-select" id="inputGroupSelect02-2" required>
                   <option selected>Seleccione</option>
                   <option value="mujer">Mujer</option>
@@ -292,7 +296,8 @@
 
             <div id="subcategoria2" style="display: none;">
               <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect03-2">Categoria Secundaria</label>
+                <label class="input-group-text" for="inputGroupSelect03-2">Categoria Secundaria <span
+                    class="requerido">*</span></label>
                 <select class="form-select" id="inputGroupSelect03-2" required>
                   <option selected>Seleccione</option>
 
@@ -304,7 +309,8 @@
 
               </div>
               <div class="mb-3 col-8">
-                <label for="portada2" class="form-label">Seleccione imagen de portada</label>
+                <label for="portada2" class="form-label">Seleccione imagen de portada <span
+                    class="requerido">*</span></label>
                 <input class="form-control" type="file" id="portada2" required accept="image/*">
                 <p id="statusSubida2"></p>
               </div>
@@ -344,14 +350,13 @@
                 <p id="statusImagen4-2"></p>
               </div>
             </div>
-
           </form>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" id="confirmarEdicion"
-            data-bs-dismiss="modal">Actualizar producto</button>
+          <button type="button" class="btn btn-primary" id="confirmarEdicion" data-bs-dismiss="modal">Actualizar
+            producto</button>
         </div>
       </div>
     </div>
