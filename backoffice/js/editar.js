@@ -6,25 +6,37 @@ let productoAEditar = {
     "material": "",
     "price": "",
     "image": "",
+    "image2": "",
+    "image3": "",
+    "image4": "",
     "colors": "",
     "mainCategory": "",
     "gender": "",
     "secondCategory": ""
 }
 let imagenActual = ""
+let imagen2Actual = ""
+let imagen3Actual = ""
+let imagen4Actual = ""
+
+
 
 let idProd = ""
 
 function obtenerDatos(id) {
     idProd = id
-    fs.doc("products/"+id)
-    .get()
-    .then(doc => {
-        completarForm(doc.data())
-        imagenActual = doc.data().image
-        productoAEditar = doc.data()
-    })
+    fs.doc("products/" + id)
+        .get()
+        .then(doc => {
+            completarForm(doc.data()),
+                imagenActual = doc.data().image,
+                imagen2Actual = doc.data().image2,
+                imagen3Actual = doc.data().image3,
+                imagen4Actual = doc.data().image4,
+                productoAEditar = doc.data()
+        })
 }
+
 
 // Completar con categorias
 
@@ -42,10 +54,10 @@ function subcategoriasEdit() {
             options = ""
 
             document.getElementById("generoManiqui2").style.display = "block";
-            document.getElementById("subcategoria2").style.display = "block";    
+            document.getElementById("subcategoria2").style.display = "block";
             break;
 
-        case "modistas": 
+        case "modistas":
             document.getElementById("generoManiqui2").style.display = "none";
             document.getElementById("subcategoria2").style.display = "none";
             break;
@@ -60,7 +72,7 @@ function subcategoriasEdit() {
             options = ""
 
             document.getElementById("generoManiqui2").style.display = "none";
-            document.getElementById("subcategoria2").style.display = "block";    
+            document.getElementById("subcategoria2").style.display = "block";
             break;
     }
 }
@@ -74,8 +86,27 @@ function completarForm(data) {
     document.getElementById("material2").value = data.material
     document.getElementById("price2").value = data.price
     document.getElementById("colors2").value = data.colors
+    document.getElementById('main-img-2').innerHTML = `<img src=${data.image} alt="Imagen de portada" style="width: 100%; height: auto;">`
 
-    if(data.mainCategory == "maniquies") {
+    if (data.image2 != "") {
+        document.getElementById('imagen-2-2').innerHTML = `<img src=${data.image2} alt="Imagen de portada" style="width: 100%; height: auto;">`
+    } else {
+        document.getElementById('imagen-2-2').innerHTML = ``
+    }
+
+    if (data.image3 != "") {
+        document.getElementById('imagen-3-2').innerHTML = `<img src=${data.image3} alt="Imagen de portada" style="width: 100%; height: auto;">`
+    } else {
+        document.getElementById('imagen-3-2').innerHTML = ``
+    }
+
+    if (data.image4 != "") {
+        document.getElementById('imagen-4-2').innerHTML = `<img src=${data.image4} alt="Imagen de portada" style="width: 100%; height: auto;">`
+    } else {
+        document.getElementById('imagen-4-2').innerHTML = ``
+    }
+
+    if (data.mainCategory == "maniquies") {
 
         for (i = 0; i < categorias.maniquies.length; i++) {
             options += `<option value="${categorias.maniquies[i]}">${categorias.maniquies[i]}</option>`
@@ -86,7 +117,7 @@ function completarForm(data) {
 
         document.getElementById("generoManiqui2").style.display = "block";
         document.getElementById("subcategoria2").style.display = "block";
-        
+
     } else if (data.mainCategory == "equipamiento") {
         for (i = 0; i < categorias.equipamiento.length; i++) {
             options += `<option value="${categorias.equipamiento[i]}">${categorias.equipamiento[i]}</option>`
@@ -121,7 +152,7 @@ document.getElementById("colors2").onblur = validarCamposCompletos2
 function validarCamposCompletos2() {
     if (document.getElementById("name2").value !== "" && document.getElementById("description2").value !== "" &&
         document.getElementById("material2").value !== "" && document.getElementById("price2").value !== "" &&
-        document.getElementById("colors2").value !== "" && 
+        document.getElementById("colors2").value !== "" &&
         document.getElementById("inputGroupSelect01-2").value !== "Seleccione" && document.getElementById("inputGroupSelect02-2").value !== "Seleccione" &&
         document.getElementById("inputGroupSelect03-2").value !== "Seleccione") {
 
@@ -156,29 +187,60 @@ function editarProducto() {
             productoAEditar.image = imagenActual
         }
 
+        if (imagenUrl2 != "") {
+            productoAEditar.image2 = imagenUrl2
+        } else {
+            productoAEditar.image2 = imagen2Actual
+        }
+
+        if (imagenUrl3 != "") {
+            productoAEditar.image3 = imagenUrl3
+        } else {
+            productoAEditar.image3 = imagen3Actual
+        }
+
+        if (imagenUrl4 != "") {
+            productoAEditar.image4 = imagenUrl4
+        } else {
+            productoAEditar.image4 = imagen4Actual
+        }
+
         fs.doc("products/" + idProd).update({
             "name": productoAEditar.name,
             "description": productoAEditar.description,
             "material": productoAEditar.material,
             "price": productoAEditar.price,
             "image": productoAEditar.image,
+            "image2": productoAEditar.image2,
+            "image3": productoAEditar.image3,
+            "image4": productoAEditar.image4,
             "colors": productoAEditar.colors,
             "mainCategory": productoAEditar.mainCategory,
             "gender": productoAEditar.gender,
             "secondCategory": productoAEditar.secondCategory
         })
-        .then (
-            toast("edited-toast"),
-            
-            fs.collection("products") // Actualiza listado de productos
-            .get()
-            .then((snapshot) => {
-                setupProducts(snapshot.docs),
-                    statusSubida = 0,
-                    document.getElementById('cargarProd').classList.add('disabled')
-            })
+            .then(
+                toast("edited-toast"),
 
-        )
+                fs.collection("products") // Actualiza listado de productos
+                    .get()
+                    .then((snapshot) => {
+                        setupProducts(snapshot.docs),
+                            statusSubida = 0,
+                            document.getElementById('cargarProd').classList.add('disabled'),
+                            document.getElementById('main-img-2').innerHTML = ``,
+                            document.getElementById('imagen-2-2').innerHTML = ``,
+                            document.getElementById('imagen-3-2').innerHTML = ``,
+                            document.getElementById('imagen-4-2').innerHTML = ``,
+                            document.getElementById('main-img').innerHTML = ``,
+                            document.getElementById('imagen-2').innerHTML = ``,
+                            document.getElementById('imagen-3').innerHTML = ``,
+                            document.getElementById('imagen-4').innerHTML = ``,
+                            limpiarTexto()
+
+                    })
+
+            )
     } else {
         console.error("Campos incompletos")
     }

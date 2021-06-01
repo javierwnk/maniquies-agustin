@@ -137,7 +137,8 @@
             </div>
             <div class="mb-3">
               <label for="description" class="form-label">Descripción:</label>
-              <textarea class="form-control" id="description" rows="3" placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
+              <textarea class="form-control" id="description" rows="3"
+                placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
                 required></textarea>
             </div>
             <div class="row">
@@ -170,19 +171,59 @@
             </div>
 
             <div id="subcategoria">
-              
+
             </div>
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Seleccione una imagen</label>
-              <input class="form-control" type="file" id="formFile" required>
-              <p id="statusSubida"></p>
-            </div>
+            <div class="row">
+              <div class="col-4" id="main-img">
+
+              </div>
+                <div class="mb-4 col-8">
+                  <label for="portada" class="form-label">Seleccione imagen de portada</label>
+                  <input class="form-control" type="file" id="portada" required accept="image/*">
+                  <p id="statusSubida"></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4" id="imagen-2">
+
+                </div>
+                <div class="mb-4 col-8">
+                  <label for="imagen2" class="form-label">Seleccione Imagen #2</label>
+                  <input class="form-control" type="file" id="imagen2" accept="image/*">
+                  <p id="statusImagen2"></p>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-4" id="imagen-3">
+
+                </div>
+                <div class="mb-3 col-8">
+                  <label for="imagen3" class="form-label">Seleccione Imagen #3</label>
+                  <input class="form-control" type="file" id="imagen3" accept="image/*">
+                  <p id="statusImagen3"></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4" id="imagen-4">
+
+                </div>
+                <div class="mb-4 col-8">
+                  <label for="imagen4" class="form-label">Seleccione Imagen #4</label>
+                  <input class="form-control" type="file" id="imagen4" accept="image/*">
+                  <p id="statusImagen4"></p>
+                </div>
+              </div>
           </form>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary disabled" id="cargarProd" data-bs-dismiss="modal">Cargar producto</button>
+          <button type="button" class="btn btn-primary disabled" id="cargarProd" data-bs-dismiss="modal">Cargar
+            producto</button>
         </div>
       </div>
     </div>
@@ -191,86 +232,130 @@
   <!-- Edición producto -->
 
   <div class="modal fade" id="editprod" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edición de producto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edición de producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
 
-        <form class="form-group" id="edit-form">
-          <div class="mb-3">
-            <label for="name2" class="form-label">Nombre:</label>
-            <input type="text" name="name2" id="name2" class="form-control" placeholder="Nombre del producto" required>
-          </div>
-          <div class="mb-3">
-            <label for="description2" class="form-label">Descripción:</label>
-            <textarea class="form-control" id="description2" rows="3" placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
-              required></textarea>
-          </div>
-          <div class="row">
-            <div class="mb-3 col">
-              <label for="material2" class="form-label">Material:</label>
-              <input type="text" name="material2" id="material2" class="form-control"
-                placeholder="Material de composición" required>
+          <form class="form-group" id="edit-form">
+            <div class="mb-3">
+              <label for="name2" class="form-label">Nombre:</label>
+              <input type="text" name="name2" id="name2" class="form-control" placeholder="Nombre del producto"
+                required>
             </div>
-            <div class="mb-3 col">
-              <label for="price2" class="form-label">Precio:</label>
-              <input type="number" name="price2" id="price2" class="form-control" placeholder="Precio" required>
+            <div class="mb-3">
+              <label for="description2" class="form-label">Descripción:</label>
+              <textarea class="form-control" id="description2" rows="3"
+                placeholder="Dimensiones: Altura 1.70 (80-61-84). Tipo de base: Cuadrada. Talle: 44."
+                required></textarea>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="colors2" class="form-label">Colores:</label>
-            <input type="text" name="colors2" id="colors2" class="form-control" placeholder="Negro, Azul, Amarillo"
-              required>
-          </div>
-          <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01-2">Categoria Principal</label>
-            <select class="form-select" id="inputGroupSelect01-2" required>
-              <option selected>Seleccione</option>
-              <option value="maniquies">Maniquies</option>
-              <option value="modistas">Modistas</option>
-              <option value="equipamiento">Equipamiento comercial</option>
-            </select>
-          </div>
-          <div id="generoManiqui2" style="display: none;">
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="material2" class="form-label">Material:</label>
+                <input type="text" name="material2" id="material2" class="form-control"
+                  placeholder="Material de composición" required>
+              </div>
+              <div class="mb-3 col">
+                <label for="price2" class="form-label">Precio:</label>
+                <input type="number" name="price2" id="price2" class="form-control" placeholder="Precio" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="colors2" class="form-label">Colores:</label>
+              <input type="text" name="colors2" id="colors2" class="form-control" placeholder="Negro, Azul, Amarillo"
+                required>
+            </div>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect02-2">Genero del Maniqui</label>
-              <select class="form-select" id="inputGroupSelect02-2" required>
+              <label class="input-group-text" for="inputGroupSelect01-2">Categoria Principal</label>
+              <select class="form-select" id="inputGroupSelect01-2" required>
                 <option selected>Seleccione</option>
-                <option value="mujer">Mujer</option>
-                <option value="hombre">Hombre</option>
-                <option value="ninos">Niños</option>
+                <option value="maniquies">Maniquies</option>
+                <option value="modistas">Modistas</option>
+                <option value="equipamiento">Equipamiento comercial</option>
               </select>
             </div>
-          </div>
-
-          <div id="subcategoria2" style="display: none;">
-            <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect03-2">Categoria Secundaria</label>
-              <select class="form-select" id="inputGroupSelect03-2" required>
-                <option selected>Seleccione</option>
-
-              </select>
+            <div id="generoManiqui2" style="display: none;">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect02-2">Genero del Maniqui</label>
+                <select class="form-select" id="inputGroupSelect02-2" required>
+                  <option selected>Seleccione</option>
+                  <option value="mujer">Mujer</option>
+                  <option value="hombre">Hombre</option>
+                  <option value="ninos">Niños</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="formFile2" class="form-label">Seleccione una imagen</label>
-            <input class="form-control" type="file" id="formFile2" required>
-            <p id="statusSubida2"></p>
-          </div>
-        </form>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary disabled" id="confirmarEdicion" data-bs-dismiss="modal">Actualizar producto</button>
+            <div id="subcategoria2" style="display: none;">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect03-2">Categoria Secundaria</label>
+                <select class="form-select" id="inputGroupSelect03-2" required>
+                  <option selected>Seleccione</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4" id="main-img-2">
+
+              </div>
+              <div class="mb-3 col-8">
+                <label for="portada2" class="form-label">Seleccione imagen de portada</label>
+                <input class="form-control" type="file" id="portada2" required accept="image/*">
+                <p id="statusSubida2"></p>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-4" id="imagen-2-2">
+
+              </div>
+              <div class="mb-4 col-8">
+                <label for="imagen2-2" class="form-label">Seleccione Imagen #2</label>
+                <input class="form-control" type="file" id="imagen2-2" accept="image/*">
+                <p id="statusImagen2-2"></p>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-4" id="imagen-3-2">
+
+              </div>
+              <div class="mb-4 col-8">
+                <label for="imagen3-2" class="form-label">Seleccione Imagen #3</label>
+                <input class="form-control" type="file" id="imagen3-2" accept="image/*">
+                <p id="statusImagen3-2"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4" id="imagen-4-2">
+
+              </div>
+              <div class="mb-4 col-8">
+                <label for="imagen4-2" class="form-label">Seleccione Imagen #4</label>
+                <input class="form-control" type="file" id="imagen4-2" accept="image/*">
+                <p id="statusImagen4-2"></p>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="confirmarEdicion"
+            data-bs-dismiss="modal">Actualizar producto</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- Toast -->
 
@@ -286,26 +371,26 @@
   </div>
 
   <div id="created-toast" class="toast align-items-center text-white bg-success border-0 toast-position" role="alert"
-  aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-      Producto creado correctamente
+    aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Producto creado correctamente
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-      aria-label="Close"></button>
   </div>
-</div>
 
-<div id="edited-toast" class="toast align-items-center text-white bg-success border-0 toast-position" role="alert"
-  aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-      Producto editado correctamente
+  <div id="edited-toast" class="toast align-items-center text-white bg-success border-0 toast-position" role="alert"
+    aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Producto editado correctamente
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-      aria-label="Close"></button>
   </div>
-</div>
 
 </body>
 
