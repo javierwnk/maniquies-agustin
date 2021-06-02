@@ -396,4 +396,23 @@ function limpiarTexto () {
     document.getElementById("statusImagen2-2").innerText = ""
     document.getElementById("statusSubida").innerText = ""
     document.getElementById("statusSubida2").innerText = ""
+
+    productoAEditar = {
+        "name": "",
+        "description": "",
+        "material": "",
+        "price": "",
+        "image": "",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "colors": "",
+        "mainCategory": "",
+        "gender": "",
+        "secondCategory": ""
+    }
+    imagenActual = ""
+    imagen2Actual = ""
+    imagen3Actual = ""
+    imagen4Actual = ""
 }
