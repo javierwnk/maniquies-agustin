@@ -110,7 +110,9 @@ nav {
   display: block;
   text-align: center;
   line-height: 40px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 24px !important;
+}
 
 .btn-card:hover {
   color: #FCF8F3; }
