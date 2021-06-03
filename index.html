@@ -6,37 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maniquíes Agustín - Fabricantes y Distribuidores</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 <body>
     
-<header class="container-fluid">
-    <nav class="container">
-        <div class="nav-item" id="logo">
+<header class="container-fluid ">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html">Inicio</a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html">Productos <span class="iconify" data-icon="ant-design:caret-down-outlined"></span></a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html">Sobre Nosotros</a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html">Preguntas Frecuentes</a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html">Contacto</a>
-        </div>
-        <div class="nav-item">
-            <a href="index.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined"></span></a>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="navbar-item active">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="navbar-item active dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Productos<span class="iconify" data-icon="ant-design:caret-down-outlined"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Maniquies<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
+                            <div class="dropdown-menu prueba">
+                                <a href="#" class="dropdown-item">prueba1</a>
+                                <a href="#" class="dropdown-item">prueba2</a>
+                                <a href="#" class="dropdown-item">prueba3</a>
+                            </div>
+                            <a href="#" class="dropdown-item">Modista</a>
+                            <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Equipamiento Comercial<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
+                            <div class="dropdown-menu prueba2">
+                                <a href="#" class="dropdown-item">prueba1</a>
+                            </div>
+                            <a href="#" class="dropdown-item">Ver todo</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="index.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="index.html" class="nav-link">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="index.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="index.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
+        </nav>
+    </div>
 </header>
 
 <div class="container-fluid cartel-info">
@@ -59,32 +78,87 @@
     </div>
 </div>
 
-<div class="container productos">
-    <h2>Productos</h2>
-    <div class="card-list">
-        <div class="card-categoria">
-            <div class="card-content">
-                <p class="card-title">Maniquíes</p>
-                <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                <a href="" class="btn-card">Ver más</a>
+<section class="productos">
+    <div class="container">
+        <h2>Productos</h2>
+        <div class="card-list">
+            <div class="card-categoria">
+                <div class="card-content">
+                    <p class="card-title">Maniquíes</p>
+                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
+                    <a href="" class="btn-card">Ver más</a>
+                </div>
             </div>
-        </div>
-        <div class="card-categoria">
-            <div class="card-content">
-                <p class="card-title">Maniquíes</p>
-                <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                <a href="" class="btn-card">Ver más</a>
+            <div class="card-categoria">
+                <div class="card-content">
+                    <p class="card-title">Maniquíes</p>
+                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
+                    <a href="" class="btn-card">Ver más</a>
+                </div>
             </div>
-        </div>
-        <div class="card-categoria">
-            <div class="card-content">
-                <p class="card-title">Maniquíes</p>
-                <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                <a href="" class="btn-card">Ver más</a>
+            <div class="card-categoria">
+                <div class="card-content">
+                    <p class="card-title">Maniquíes</p>
+                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
+                    <a href="" class="btn-card">Ver más</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</section>
+<section class="formulario">
+    <div class="container">
+        <h2>Consultas</h2>
+        <p>Si no encontraste respuesta a tu pregunta en <a href="#">Preguntas Frecuentes</a>, completá el siguiente formulario:</p>
+        <div>
+            <form action="" method="" class="contact-form">
+                <p>Nombre</p>
+                <input type="text" class="form-control" id="name">
+                <p>Email</p>
+                <input type="email" class="form-control" id="email">
+                <p>Celular</p>
+                <input type="number" class="form-control" id="phone">
+                <p>Consulta</p>
+                <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
+                <input type="submit" class="contacto-submit" value="Enviar consulta">
+            </form>   
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <nav class="row">
+            <ul class="col-3 list-unstyled">
+                <li><b>Navegacion</b></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Medios de Pago</b></li>
+                <li><a href="#">MercadoPago</a></li>
+                <li><a href="#">Efectivo</a></li>
+                <li><a href="#">Transferencia Bancaria</a></li>
+                <li><a href="#">Imagenes de tarjetas</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Contactanos</b></li>
+                <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
+                <li><a href="#"><span class="iconify" data-icon="feather:mail" data-inline="false"></span> ivannn_95@hotmail.com</a></li>
+                <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Redes Sociales</b></li>
+                <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
+                <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
 </html>
