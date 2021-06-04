@@ -293,3 +293,56 @@ footer div nav ul li{
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
+/* DETALLE DEL PRODUCTO */
+
+.product-details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.product-images {
+  width: 420px;
+  height: fit-content;
+}
+
+.product-info {
+  width: 550px;
+  height: fit-content;
+}
+
+.slider-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.image-preview {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-top: 28px;
+
+}
+
+.product-title {
+  font-size: 36px;
+  line-height: 43,88px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.divider {
+  width: 100%;
+  border: 0.5px solid #CCCCCC;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 36px;
+  color: #5F5C59;
+  line-height: 44px;
+  margin-top: 16px;
+}
+
