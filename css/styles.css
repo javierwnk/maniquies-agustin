@@ -153,6 +153,70 @@ nav {
     width: 85%;
     margin-top: 18px; }
 
+  .product-card {
+    width: 260px;
+    height: fit-content;
+    border: 0.5px solid #CCCCCC;
+    margin-bottom: 88px;
+    min-height: 438px;
+  }
+
+  .product-card-image {
+    width: 260px;
+    height: 351px;
+  }
+
+  #INSERTAR-NOMBRE {
+    background-image: url('../images/maniquies.png');
+  }
+
+  #INSERTAR-NOMBRE:hover {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url("../images/maniquies.png");
+  }
+
+  .product-card-content {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .body-card {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+  }
+
+  .body-price {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+  }
+
+
+  .hidden-content {
+    display: none;
+
+  }
+
+  .product-card-image:hover + .hidden-content {
+    display: block;
+  }
+
+
+  .body-text-viewmore {
+    color: red;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .hidden-content .iconify {
+    font-size: 50px !important;
+    color: red !important;
+    
+  }
+
+
 /*FORMULARIO*/
 
 p a{
@@ -191,6 +255,7 @@ background: #CCCCCC;
 box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.25);
 border-radius: 3.7;
 }
+
 /*FOOTER*/
 footer {
   color: white;
@@ -211,4 +276,20 @@ footer div nav ul li{
   line-height: 22px;
   margin: 10px;
 
+}
+
+/* CATALOGO */
+
+.breadcrumb {
+  background-color: #FFF !important;
+}
+
+.breadcrumb-item a{
+  color: #000 !important;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
