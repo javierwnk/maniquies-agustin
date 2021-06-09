@@ -14,8 +14,8 @@ document.getElementById("portada").onblur = validarCamposCompletos
 
 
 let categorias = {
-    "maniquies": ["Cuerpo completo", "Colgante", "Bustos", "Lenceria", "Cabeza", "Piernas", "Fibra de vidrio"],
-    "equipamiento": ["Perchas", "Percheros", "Portacarteras", "Mensulas", "Ganchos S", "Cajas Registradoras"]
+    "maniquies": [{"id": 1, "name":"Cuerpo Completo"}, {"id": 2, "name":"Colgante"}, {"id": 3, "name":"Bustos"}, {"id": 4, "name":"Lenceria"}, {"id": 5, "name":"Cabeza"}, {"id": 6, "name":"Piernas"}, {"id": 7, "name":"Fibra de Vidrio"}],
+    "equipamiento": [{"id": 8, "name":"Perchas"},{"id": 9, "name":"Percheros"},{"id": 10, "name":"Portacarteras"},{"id": 11, "name":"Mensulas"},{"id": 12, "name":"Ganchos S"},{"id": 13, "name":"Cajas Registradoras"}]
 }
 
 function subcategorias() {
@@ -23,7 +23,7 @@ function subcategorias() {
     switch (document.getElementById("inputGroupSelect01").value) {
         case "maniquies":
             for (i = 0; i < categorias.maniquies.length; i++) {
-                options += `<option value="${categorias.maniquies[i]}">${categorias.maniquies[i]}</option>`
+                options += `<option value="${categorias.maniquies[i].id}">${categorias.maniquies[i].name}</option>`
             }
             document.getElementById("generoManiqui").innerHTML = `
             <div class="input-group mb-3">
@@ -72,7 +72,7 @@ function subcategorias() {
             break;
         case "equipamiento":
             for (i = 0; i < categorias.equipamiento.length; i++) {
-                options += `<option value="${categorias.equipamiento[i]}">${categorias.equipamiento[i]}</option>`
+                options += `<option value="${categorias.equipamiento[i].id}">${categorias.equipamiento[i].name}</option>`
             }
             document.getElementById("generoManiqui").innerHTML = `
             <div class="input-group mb-3" style="display: none">

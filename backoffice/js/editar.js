@@ -47,7 +47,7 @@ function subcategoriasEdit() {
     switch (document.getElementById("inputGroupSelect01-2").value) {
         case "maniquies":
             for (i = 0; i < categorias.maniquies.length; i++) {
-                options += `<option value="${categorias.maniquies[i]}">${categorias.maniquies[i]}</option>`
+                options += `<option value="${categorias.maniquies[i].id}">${categorias.maniquies[i].name}</option>`
             }
 
             document.getElementById("inputGroupSelect03-2").innerHTML = options
@@ -64,7 +64,7 @@ function subcategoriasEdit() {
 
         case "equipamiento":
             for (i = 0; i < categorias.equipamiento.length; i++) {
-                options += `<option value="${categorias.equipamiento[i]}">${categorias.equipamiento[i]}</option>`
+                options += `<option value="${categorias.equipamiento[i].id}">${categorias.equipamiento[i].name}</option>`
             }
 
             document.getElementById("inputGroupSelect03-2").innerHTML = options
@@ -109,7 +109,7 @@ function completarForm(data) {
     if (data.mainCategory == "maniquies") {
 
         for (i = 0; i < categorias.maniquies.length; i++) {
-            options += `<option value="${categorias.maniquies[i]}">${categorias.maniquies[i]}</option>`
+            options += `<option value="${categorias.maniquies[i].id}">${categorias.maniquies[i].name}</option>`
         }
 
         document.getElementById("inputGroupSelect03-2").innerHTML = options
@@ -120,7 +120,7 @@ function completarForm(data) {
 
     } else if (data.mainCategory == "equipamiento") {
         for (i = 0; i < categorias.equipamiento.length; i++) {
-            options += `<option value="${categorias.equipamiento[i]}">${categorias.equipamiento[i]}</option>`
+            options += `<option value="${categorias.equipamiento[i].id}">${categorias.equipamiento[i].name}</option>`
         }
 
         document.getElementById("inputGroupSelect03-2").innerHTML = options
