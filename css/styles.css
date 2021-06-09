@@ -188,17 +188,17 @@ nav {
     height: fit-content;
     border: 0.5px solid #CCCCCC;
     margin-bottom: 88px;
-    min-height: 438px;
   }
 
   .product-card-image {
     width: 260px;
-    height: 351px;
+    height: fit-content;
   }
 
-  #INSERTAR-NOMBRE {
-    background-image: url('../images/maniquies.png');
+  .product-card-image img {
+    width: 100%;
   }
+
 
   .product-card:hover {
     cursor: pointer;

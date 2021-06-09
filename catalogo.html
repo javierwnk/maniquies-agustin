@@ -10,6 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+      
+
+    <script src="./js/firebase.js"></script>
+    <script defer src="./js/catalogo.js"></script>
 </head>
 <body>
     
@@ -83,7 +96,7 @@
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="catalogo.html?mainCategory=equipamiento" class="dropdown-item">Ver todo</a></li>
+                                <li><a href="catalogo.html?all=true" class="dropdown-item">Ver todo</a></li>
                             </ul>
                         </li>
                         <li class="navbar-item active">
@@ -113,23 +126,9 @@
       </nav>
 
     <div class="product-list">
-        <div class="product-card">
-            
-            <div class="image-content">
-                <div class="product-card-image" id="INSERTAR-NOMBRE">
-                </div>
-            </div>
-            
-            <div class="product-card-content">
-                <p class="body-card">
-                    Maniquí T44 plástico sdasdasd
-                </p>
-                <p class="body-price">
-                    $6300
-                </p>
-            </div>
-        </div>
         
+        <!-- Se ingresa por JS -->
+
     </div>
 </main>
 
