@@ -200,8 +200,8 @@ nav {
     background-image: url('../images/maniquies.png');
   }
 
-  #INSERTAR-NOMBRE:hover {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url("../images/maniquies.png");
+  .product-card:hover {
+    cursor: pointer;
   }
 
   .product-card-content {
@@ -221,30 +221,6 @@ nav {
     margin-bottom: 0 !important;
   }
 
-
-  .hidden-content {
-    display: none;
-
-  }
-
-  .product-card-image:hover + .hidden-content {
-    display: block;
-  }
-
-
-  .body-text-viewmore {
-    color: red;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 0 !important;
-    text-align: center;
-  }
-
-  .hidden-content .iconify {
-    font-size: 50px !important;
-    color: red !important;
-    
-  }
 
 
 /*FORMULARIO*/
