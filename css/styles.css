@@ -302,6 +302,10 @@ footer div nav ul li{
   justify-content: space-between;
 }
 
+.breadcrumb-item:first-letter {
+  text-transform: uppercase;
+}
+
 /* DETALLE DEL PRODUCTO */
 
 .product-details {

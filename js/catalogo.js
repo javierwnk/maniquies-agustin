@@ -80,7 +80,9 @@ catalogList()
 let productoList = document.querySelector(".product-list")
 
 const listarProductos = data => {
-    if(data.length) {
+
+    
+    if(data.length > 0) {
         let html = "";
 
         data.forEach(doc => {
@@ -111,5 +113,89 @@ const listarProductos = data => {
 
         productoList.innerHTML = html
 
+    } else {
+        productoList.innerHTML = `<p style="margin: 0 auto;">No se encontraron productos para la categoría seleccionada</p>`
     }
 }
+
+// Manejo de breadcrumb
+
+let categorias = {
+    "maniquies": [{"id": 1, "name":"Cuerpo Completo"}, {"id": 2, "name":"Colgante"}, {"id": 3, "name":"Bustos"}, {"id": 4, "name":"Lenceria"}, {"id": 5, "name":"Cabeza"}, {"id": 6, "name":"Piernas"}, {"id": 7, "name":"Fibra de Vidrio"}],
+    "equipamiento": [{"id": 8, "name":"Perchas"},{"id": 9, "name":"Percheros"},{"id": 10, "name":"Portacarteras"},{"id": 11, "name":"Mensulas"},{"id": 12, "name":"Ganchos S"},{"id": 13, "name":"Cajas Registradoras"}]
+}
+
+let breadcrumb = () => {
+
+    let path = ""
+    let categoria2Name = ""
+
+    if(urlParams.has('all')) {
+        path = `<li class="breadcrumb-item"><a href="catalogo.html?all=true">Productos</a></li>
+                <li class="breadcrumb-item active">Todos los productos</li>
+        `
+
+        document.getElementById("breacrumb-catalogo").innerHTML = path
+    } else {
+        path = `<li class="breadcrumb-item"><a href="catalogo.html?all=true">Productos</a></li>
+                <li class="breadcrumb-item"><a href="catalogo.html?mainCategory=${categoria1}">${categoria1}</a></li>`
+
+                if(urlParams.has('gender') && urlParams.has('secondCategory')) {
+
+                    if(categoria1 == "maniquies") {
+                        for(let i = 0; i < categorias.maniquies.length; i++) {
+                            if (categoria2 == categorias.maniquies[i].id) {
+                                categoria2Name = categorias.maniquies[i].name
+                                break;   
+                            }
+                        }    
+                    }
+
+                    if(categoria1 == "equipamiento") {
+                        for(let i = 0; i < categorias.equipamiento.length; i++) {
+                            if (categoria2 == categorias.equipamiento[i].id) {
+                                categoria2Name = categorias.equipamiento[i].name
+                                break;   
+                            }
+                        }    
+                    }
+
+                    path += `<li class="breadcrumb-item"><a href="catalogo.html?mainCategory=${categoria1}&&gender=${gender}">${gender}</a></li>`
+                    path += `<li class="breadcrumb-item active"><a href="catalogo.html?mainCategory=${categoria1}&&gender=${gender}&&secondCategory=${categoria2}">${categoria2Name}</a></li>`
+
+                } else if(urlParams.has('gender') && urlParams.has('secondCategory') == false) {
+
+                    path += `<li class="breadcrumb-item active"><a href="catalogo.html?mainCategory=${categoria1}&&gender=${gender}">${gender}</a></li>`
+
+                } else if(urlParams.has('gender') == false && urlParams.has('secondCategory')) {
+
+                    if(categoria1 == "maniquies") {
+                        for(let i = 0; i < categorias.maniquies.length; i++) {
+                            if (categoria2 == categorias.maniquies[i].id) {
+                                categoria2Name = categorias.maniquies[i].name
+                                break;   
+                            }
+                        }    
+                    }
+
+                    if(categoria1 == "equipamiento") {
+                        for(let i = 0; i < categorias.equipamiento.length; i++) {
+                            if (categoria2 == categorias.equipamiento[i].id) {
+                                categoria2Name = categorias.equipamiento[i].name
+                                break;   
+                            }
+                        }    
+                    }
+
+                    path += `<li class="breadcrumb-item active"><a href="catalogo.html?mainCategory=${categoria1}&&gender=${gender}&&secondCategory=${categoria2}">${categoria2Name}</a></li>`
+
+                }
+
+                document.getElementById("breacrumb-catalogo").innerHTML = path
+
+    }
+
+
+}
+
+breadcrumb()
