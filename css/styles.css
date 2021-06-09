@@ -8,6 +8,18 @@ h1 {
   line-height: 34px;
   font-weight: 600; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
 /*HEADER + NAVBAR*/
 
 header {
@@ -365,3 +377,62 @@ footer div nav ul li{
   line-height: 44px;
   margin-top: 16px;
 }
+
+.qty {
+  width: 150px;
+  height: fit-content;
+  margin-top: 14px;
+  display: block;
+}
+
+.qty p {
+  font-size: 1.5rem;
+}
+
+.qty-controller {
+  background-color: #C4C4C4;
+  width: 34px !important;
+  display: inline-block;
+  border: 0.5px solid #CCCCCC;
+}
+
+#quantityInput {
+  width: 61px !important;
+  display: inline-block;
+  text-align: center;
+  border: 0.5px solid #E9E5E5;
+}
+
+.add-to-cart {
+  margin: 42px 0;
+  width: 381px;
+  height: 62px;
+  background: #CCCCCC;
+  box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  }
+
+  #description {
+    margin-top: 10px;
+  }
+
+  #description h3{
+  font-size: 34px;
+  font-weight: 400;
+  color: #1A1A19;
+  }
+
+  #description ul {
+    list-style: none;
+  }
+
+  #description li {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #5F5C59;
+    margin-top: 14px;
+    font-weight: 400;
+  }

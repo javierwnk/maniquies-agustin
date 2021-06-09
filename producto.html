@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script defer src="./js/index.js"></script>
 </head>
 <body>
     
@@ -141,10 +142,26 @@
             <h1 class="product-title">Maniquí T44 plástico</h1>
             <div class="divider"></div>
             <h2 class="product-price">$6300</h2>
-            
-            <!-- Agregar selector de cantidades -->
+            <div class="qty">
+                <p>Cantidad:</p>
+                <button class="qty-controller" id="subtract">-</button>
+                <input type="number" name="" id="quantityInput" value="1">
+                <button class="qty-controller" id="add">+</button>
+            </div>
 
+            <button class="add-to-cart"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" style="margin-right: 10px"></span>Agregar al carrito</button>
             
+            <div class="divider"></div>
+
+            <section id="description">
+                <h3>Descripción</h3>
+                <ul>
+                    <li>Medidas: altura 1.75 (9269-106), T44</li>
+                    <li>Material: plástico</li>
+                    <li>Base: madera</li>
+                    <li>Colores: beige, negro, blanco</li>
+                </ul>
+            </section>
         </div>
     </div>
 
