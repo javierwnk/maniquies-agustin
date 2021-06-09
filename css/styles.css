@@ -436,3 +436,26 @@ footer div nav ul li{
     margin-top: 14px;
     font-weight: 400;
   }
+
+  /* COMUNES PAGINAS DE CONTENIDO */
+
+  .section-title-h1 {
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  .contenido {
+    margin-top: 44px;
+  }
+  
+
+/* PREGUNTAS FRECUENTES */
+
+
+.accordion {
+  margin-top: 44px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
