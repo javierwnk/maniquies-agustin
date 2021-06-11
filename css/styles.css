@@ -219,6 +219,7 @@ nav {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 0 !important;
+    color: #5F5C59
   }
 
 
@@ -304,6 +305,11 @@ footer div nav ul li{
 
 .breadcrumb-item:first-letter {
   text-transform: uppercase;
+}
+
+.product-list a {
+  text-decoration: none;
+  color: #1A1A19
 }
 
 /* DETALLE DEL PRODUCTO */
@@ -428,7 +434,6 @@ footer div nav ul li{
     margin-top: 44px;
   }
   
-
 /* PREGUNTAS FRECUENTES */
 
 
