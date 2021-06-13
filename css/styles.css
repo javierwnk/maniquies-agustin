@@ -339,9 +339,17 @@ footer div nav ul li{
 .image-preview {
   width: 100px;
   height: 100px;
-  background-color: red;
   margin-top: 28px;
+  border: 0.5px solid #CCCCCC;
+}
 
+.active {
+  border: 1px solid #1A1A19;
+}
+
+.image-preview:hover {
+  cursor: pointer;
+  border: 1px solid #1A1A19;
 }
 
 .product-title {

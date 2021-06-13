@@ -120,42 +120,26 @@
     
 <main class="container">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        <ol class="breadcrumb" id="breadcrumbList">
         </ol>
       </nav>
 
     <div class="product-details">
         <div class="product-images">
-            <img src="./images/maniquies.png" alt="Foto principal" width="420px" height="auto">
+            <img src="./images/logo.png" id="image" alt="Foto principal" width="420px" height="auto">
 
-            <div class="slider-gallery">
-                <div class="image-preview" style="background-image: url('./images/maniquies.png');background-size: contain;">
+            <div class="slider-gallery" id="slider-gallery">
+                <div class="image-preview active" id="image1"></div>
+                <div class="image-preview" id="image2"></div>
+                <div class="image-preview" id="image3"></div>
+                <div class="image-preview" id="image4"></div>
 
-                </div>
-
-                <div class="image-preview" style="background-image: url('./images/maniquies.png');background-size: contain;">
-
-                </div>
-
-                <div class="image-preview" style="background-image: url('./images/maniquies.png');background-size: contain;">
-
-                </div>
-
-                <div class="image-preview" style="background-image: url('./images/maniquies.png');background-size: contain;">
-
-                </div>
-
-                
             </div>
         </div>
         <div class="product-info">
-            <h1 class="product-title">Maniquí T44 plástico</h1>
+            <h1 class="product-title" id="product-title"></h1>
             <div class="divider"></div>
-            <h2 class="product-price">$6300</h2>
+            <h2 class="product-price" id="product-price"></h2>
             <div class="qty">
                 <p>Cantidad:</p>
                 <button class="qty-controller" id="subtract">-</button>
@@ -169,11 +153,7 @@
 
             <section id="description">
                 <h3>Descripción</h3>
-                <ul>
-                    <li>Medidas: altura 1.75 (9269-106), T44</li>
-                    <li>Material: plástico</li>
-                    <li>Base: madera</li>
-                    <li>Colores: beige, negro, blanco</li>
+                <ul id="description-list">
                 </ul>
             </section>
         </div>
