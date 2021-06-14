@@ -105,8 +105,100 @@
 
     
 <main class="container contenido">
+    <div class="step1" style="display: none;">
+        <h1 class="section-title-h1">Carrito</h1>
 
-    <h1 class="section-title-h1">Contacto</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Artículo</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="cart-product-list">
+              <tr>
+                <th scope="row" class="product-info-2 align-middle"><img src="./images/maniquies.png"> <p>Maniqui Mujer Entero T24</p></th>
+                <td class="align-middle">$2990</td>
+                <td class="align-middle"><div class="qty">
+                    <button class="qty-controller" id="subtract">-</button>
+                    <input type="number" name="" id="quantityInput" value="1">
+                    <button class="qty-controller" id="add">+</button>
+                </div></td>
+                <td class="align-middle">X</td>
+              </tr>
+              <tr>
+                <th scope="row" class="product-info-2 align-middle"><p>TOTAL:</p></th>
+                <td class="align-middle"></td>
+                <td class="align-middle"></td>
+                <td class="align-middle">$2990</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="d-inline" style="width: 100%; height: fit-content;">
+            <button class="add-to-cart">SIGUIENTE</button>
+        </div>
+
+    </div>
+
+    <div class="step2">
+        <h2><span class="iconify" data-icon="bx:bx-arrow-back"></span></h2>
+
+        <div class="last-step">
+            <div class="form">
+                <p class="grey">Complete los siguientes datos para enviar el pedido</p>
+                <h3>Datos para realizar el pedido</h3>
+
+                <form>
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" class="form-control" id="lastname">
+                      </div>
+                      <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="number" class="form-control" id="dni">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="number" class="form-control" id="phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="city">Localidad</label>
+                        <input type="text" class="form-control" id="city">
+                      </div>
+                      <div class="form-group">
+                        <label for="state">Provincia</label>
+                        <input type="text" class="form-control" id="state">
+                      </div>
+                      <button class="add-to-cart full">Envíar pedido</button>
+
+                  </form>
+            </div>
+
+            <div class="resume">
+                <h3>Resumen del pedido</h3>
+                <div class="resume-product">
+                    <img src="images/maniquies.png">
+                    <div class="resume-details align-middle">
+                        <p class="resume-title">Maniqui T44 plástico</p>
+                        <p class="grey resume-price">$6300</p>
+                        <p class="grey resume-qty">Cantidad: 1</p>
+                    </div>
+                    
+                </div>
+
+                <div class="resume-total">
+                    <p>Total: $3990</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </main>
 

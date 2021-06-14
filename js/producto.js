@@ -102,7 +102,7 @@ const showProductDetails = () => {
     document.getElementById("image").src = producto.image
 
     // Slider gallery
-    let gallery = `<div class="image-preview active" id="image1" onclick="changeMainImage(1)" style="background-image: url('${producto.image}');background-size: contain;background-repeat: no-repeat; background-position: center;"></div>`
+    let gallery = `<div class="image-preview active-img" id="image1" onclick="changeMainImage(1)" style="background-image: url('${producto.image}');background-size: contain;background-repeat: no-repeat; background-position: center;"></div>`
 
     if(producto.image2 != "")
     gallery += `<div class="image-preview" id="image2" onclick="changeMainImage(2)" style="background-image: url('${producto.image2}');background-size: contain;background-repeat: no-repeat; background-position: center;"></div>`
@@ -121,32 +121,32 @@ const showProductDetails = () => {
         switch (number) {
             case 1:
                 document.getElementById("image").src = producto.image
-                document.getElementById("image1").classList.add("active")
-                document.getElementById("image2").classList.remove("active")
-                document.getElementById("image3").classList.remove("active")
-                document.getElementById("image4").classList.remove("active")
+                document.getElementById("image1").classList.add("active-img")
+                document.getElementById("image2").classList.remove("active-img")
+                document.getElementById("image3").classList.remove("active-img")
+                document.getElementById("image4").classList.remove("active-img")
 
                 break;
             case 2:
                 document.getElementById("image").src = producto.image2
-                document.getElementById("image1").classList.remove("active")
-                document.getElementById("image2").classList.add("active")
-                document.getElementById("image3").classList.remove("active")
-                document.getElementById("image4").classList.remove("active")
+                document.getElementById("image1").classList.remove("active-img")
+                document.getElementById("image2").classList.add("active-img")
+                document.getElementById("image3").classList.remove("active-img")
+                document.getElementById("image4").classList.remove("active-img")
                 break;
             case 3:
                 document.getElementById("image").src = producto.image3
-                document.getElementById("image1").classList.remove("active")
-                document.getElementById("image2").classList.remove("active")
-                document.getElementById("image3").classList.add("active")
-                document.getElementById("image4").classList.remove("active")
+                document.getElementById("image1").classList.remove("active-img")
+                document.getElementById("image2").classList.remove("active-img")
+                document.getElementById("image3").classList.add("active-img")
+                document.getElementById("image4").classList.remove("active-img")
                 break;
             case 4:
                 document.getElementById("image").src = producto.image4
-                document.getElementById("image1").classList.remove("active")
-                document.getElementById("image2").classList.remove("active")
-                document.getElementById("image3").classList.remove("active")
-                document.getElementById("image4").classList.add("active")
+                document.getElementById("image1").classList.remove("active-img")
+                document.getElementById("image2").classList.remove("active-img")
+                document.getElementById("image3").classList.remove("active-img")
+                document.getElementById("image4").classList.add("active-img")
                 break;
                         
         }
