@@ -152,3 +152,30 @@ const showProductDetails = () => {
         }
     }
 
+// Action de add-to-cart
+
+document.getElementById("add-cart").addEventListener('click', () => {
+    let cantidad = document.getElementById("quantityInput").value
+    loadCart(producto, cantidad)
+
+    let toastHTMLElement = document.getElementById("added-toast");
+    var toastElement = new bootstrap.Toast(toastHTMLElement, { animation: true, delay: 2000 })
+
+    toastElement.show()
+
+} )
+
+
+function loadCart (producto, cantidad) {
+    let cargar = {...producto, cantidad: cantidad}
+    if (localStorage.getItem("carrito")) {
+
+        let carrito = JSON.parse(localStorage.getItem("carrito"))
+        carrito.push(cargar)
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+
+    } else {
+        localStorage.setItem("carrito", JSON.stringify([cargar]))
+    }
+}
+
