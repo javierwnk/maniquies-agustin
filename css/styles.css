@@ -417,7 +417,7 @@ footer div nav ul li{
   border: none;
   }
 
-  .add-to-cart:hover {
+  .add-to-cart:hover:enabled {
     background: #1A1A19;
     color: #FFF;
   }
@@ -491,6 +491,18 @@ footer div nav ul li{
 .step1 .add-to-cart {
   margin: 0 auto !important;
   display: block;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+#back:hover {
+  cursor: pointer;
+}
+
+td, .center {
+  text-align: center;
 }
 
 .last-step {

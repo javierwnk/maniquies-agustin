@@ -106,46 +106,33 @@
 
     
 <main class="container contenido">
-    <div class="step1">
+    <div class="step1" id="step1">
         <h1 class="section-title-h1">Carrito</h1>
 
         <table class="table">
             <thead>
               <tr>
                 <th scope="col">Artículo</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Cantidad</th>
+                <th scope="col" class="center">Precio unitario</th>
+                <th scope="col" class="center">Cantidad</th>
+                <th scope="col" class="center">Subtotal</th>
                 <th scope="col"></th>
               </tr>
             </thead>
             <tbody id="cart-product-list">
-              <tr>
-                <th scope="row" class="product-info-2 align-middle"><img src="./images/maniquies.png"> <p>Maniqui Mujer Entero T24</p></th>
-                <td class="align-middle">$2990</td>
-                <td class="align-middle"><div class="qty">
-                    <button class="qty-controller" id="subtract">-</button>
-                    <input type="number" name="" id="quantityInput" value="1">
-                    <button class="qty-controller" id="add">+</button>
-                </div></td>
-                <td class="align-middle">X</td>
-              </tr>
-              <tr>
-                <th scope="row" class="product-info-2 align-middle"><p>TOTAL:</p></th>
-                <td class="align-middle"></td>
-                <td class="align-middle"></td>
-                <td class="align-middle">$2990</td>
-              </tr>
+              
+              
             </tbody>
           </table>
 
           <div class="d-inline" style="width: 100%; height: fit-content;">
-            <button class="add-to-cart">SIGUIENTE</button>
+            <button class="add-to-cart" id="next">SIGUIENTE</button>
         </div>
 
     </div>
 
-    <div class="step2" style="display: none;">
-        <h2><span class="iconify" data-icon="bx:bx-arrow-back"></span></h2>
+    <div class="step2" id="step2" style="display: none;">
+        <h2 id="back"><span class="iconify" data-icon="bx:bx-arrow-back"></span></h2>
 
         <div class="last-step">
             <div class="form">
@@ -177,26 +164,13 @@
                         <label for="state">Provincia</label>
                         <input type="text" class="form-control" id="state">
                       </div>
-                      <button class="add-to-cart full">Envíar pedido</button>
+                    <button disabled id="send" class="add-to-cart full">Envíar pedido</button>
 
                   </form>
             </div>
 
-            <div class="resume">
-                <h3>Resumen del pedido</h3>
-                <div class="resume-product">
-                    <img src="images/maniquies.png">
-                    <div class="resume-details align-middle">
-                        <p class="resume-title">Maniqui T44 plástico</p>
-                        <p class="grey resume-price">$6300</p>
-                        <p class="grey resume-qty">Cantidad: 1</p>
-                    </div>
-                    
-                </div>
-
-                <div class="resume-total">
-                    <p>Total: $3990</p>
-                </div>
+            <div class="resume" id="resumen">
+                
             </div>
         </div>
     </div>

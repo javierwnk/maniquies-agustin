@@ -98,6 +98,9 @@ const showProductDetails = () => {
     <li>Colores: ${producto.colors}</li>
     `
 
+    // Boton de compra
+    document.getElementById("add-cart").disabled = false
+
     // Imagen principal
     document.getElementById("image").src = producto.image
 
