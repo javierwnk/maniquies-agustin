@@ -157,6 +157,6 @@ const sentOrder = () => {
 
     mensaje += `%0A*Total de la compra: $${totalCarrito}*%0A%0AMis datos son:%0ADNI: ${document.getElementById("dni").value}%0ATeléfono:  ${document.getElementById("phone").value}%0ASoy de: ${document.getElementById("city").value}, ${document.getElementById("state").value}%0A¡Muchas gracias!`
 
-    window.open(`https://api.whatsapp.com/send?phone=541156268496&text=${mensaje}`)
+    window.open(`https://api.whatsapp.com/send?phone=541130333174&text=${mensaje}`)
     
 }
