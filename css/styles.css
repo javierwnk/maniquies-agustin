@@ -61,12 +61,17 @@ header {
   }
   
   .dropdown-submenu>.dropdown-menu{
-    top: 0;
+    top: 0px;
     margin-top: -5px;
     left:100%;
     width: 570px;
     background: #FCF8F3;
   }
+
+  .heightMenu{
+    top: -65px !important;
+  }
+ 
   .Item-1{
     margin-left: 10px;
     width: 90%;
@@ -579,6 +584,7 @@ cursor:pointer;
 .logo-socialmedia a, a:hover, a:focus, a:active {
 text-decoration: none;
 color: inherit;
+
 }
 
 /* CARRITO */
@@ -793,4 +799,5 @@ td, .center {
 
 .page-exito {
   margin: 44px auto;
+
 }
