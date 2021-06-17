@@ -55,12 +55,17 @@ header {
   }
   
   .dropdown-submenu>.dropdown-menu{
-    top: 0;
+    top: 0px;
     margin-top: -5px;
     left:100%;
     width: 570px;
     background: #FCF8F3;
   }
+
+  .heightMenu{
+    top: -65px !important;
+  }
+ 
   .Item-1{
     margin-left: 10px;
     width: 90%;
@@ -451,4 +456,118 @@ footer div nav ul li{
 
 .accordion-button:focus {
   box-shadow: none;
+}
+
+/*VIEW CONTACTO*/
+
+.estiloC{
+  display: flex;
+  flex-direction: column;
+}
+
+.estiloC a{
+    color: #0060B6;
+    text-decoration: none;
+
+}
+.estiloC a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+.estiloC a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.estiloB{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.estiloB .iconify {
+  font-size: 24px !important;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+.estiloB p {
+  font-weight: 500;
+  width: 30%;
+  padding: 10px;
+}
+
+.sizeCont2{
+  font-size: 90%;
+}
+
+/*VIEW SOBRE NOSOTROS*/
+
+.carousel-indicators li{
+  border-radius: 100%;
+  background-color:#8B8B8B;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  position: relative;
+  top: 60px;
+}
+.estilo-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px; 
+  margin-bottom: 88px;}
+.estilo-carousel p {
+  display: block;
+  width: 85%;
+  margin-top: 18px; 
+}
+.estilo-mapa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px; 
+  margin-bottom: 88px;
+}
+.estilo-mapa h1 {
+  width: 85%;
+  margin-top: 18px;
+  margin-right: 250px; 
+}
+
+.estilo-mapa p {
+  display: block;
+  margin-top: 25px; 
+}
+.horario{
+  position: relative;
+  top:-25px;
+  left: 80px;
+}
+
+.titulo-socialmedia{
+  display: flex;
+ justify-content: center;
+}
+.logo-socialmedia{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  }
+.logo-socialmedia a{
+  color: #0060B6;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px
+
+}
+.logo-socialmedia a:hover {
+color:#00A0C6; 
+text-decoration:none; 
+cursor:pointer;  
+}
+.logo-socialmedia a, a:hover, a:focus, a:active {
+text-decoration: none;
+color: inherit;
 }
