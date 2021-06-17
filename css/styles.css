@@ -467,6 +467,227 @@ footer div nav ul li{
   box-shadow: none;
 }
 
+/*VIEW CONTACTO*/
+
+.estiloC{
+  display: flex;
+  flex-direction: column;
+}
+
+.estiloC a{
+    color: #0060B6;
+    text-decoration: none;
+
+}
+.estiloC a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+.estiloC a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.estiloB{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.estiloB .iconify {
+  font-size: 24px !important;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+.estiloB p {
+  font-weight: 500;
+  width: 30%;
+  padding: 10px;
+}
+
+.sizeCont2{
+  font-size: 90%;
+}
+
+/*VIEW SOBRE NOSOTROS*/
+
+.carousel-indicators li{
+  border-radius: 100%;
+  background-color:#8B8B8B;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  position: relative;
+  top: 60px;
+}
+.estilo-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px; 
+  margin-bottom: 88px;}
+.estilo-carousel p {
+  display: block;
+  width: 85%;
+  margin-top: 18px; 
+}
+.estilo-mapa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px; 
+  margin-bottom: 88px;
+}
+.estilo-mapa h1 {
+  width: 85%;
+  margin-top: 18px;
+  margin-right: 250px; 
+}
+
+.estilo-mapa p {
+  display: block;
+  margin-top: 25px; 
+}
+.horario{
+  position: relative;
+  top:-25px;
+  left: 80px;
+}
+
+.titulo-socialmedia{
+  display: flex;
+ justify-content: center;
+}
+.logo-socialmedia{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  }
+.logo-socialmedia a{
+  color: #0060B6;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px
+
+}
+.logo-socialmedia a:hover {
+color:#00A0C6; 
+text-decoration:none; 
+cursor:pointer;  
+}
+.logo-socialmedia a, a:hover, a:focus, a:active {
+text-decoration: none;
+color: inherit;
+}
+
+/* CARRITO */
+
+.table {
+  margin-top: 44px;
+}
+
+.table .qty {
+  margin-top: 0;
+}
+
+.product-info-2 img {
+  display: inline-block;
+  width: 220px;
+  height: auto;
+}
+
+.product-info-2 p {
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.step1 .add-to-cart {
+  margin: 0 auto !important;
+  display: block;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+#back:hover {
+  cursor: pointer;
+}
+
+td, .center {
+  text-align: center;
+}
+
+.last-step {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.full {
+  width: 100%;
+}
+
+.last-step .form {
+  width: 50%;
+}
+
+.last-step form {
+  width: 100%;
+}
+
+
+.resume-product {
+  margin: 16px 0;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.resume-product img {
+  display: inline-block;
+  width: 165px;
+  margin-right: 24px;
+}
+
+.resume-details {
+  display: inline-block;
+
+}
+
+.grey {
+  color: #5F5C59;
+  font-weight: 400;
+}
+
+.form .grey {
+  font-size: 20px;
+  margin: 32px 0;
+}
+
+.form h3 {
+  margin: 32px 0;
+}
+
+.resume-title {
+  color: #1A1A19;
+  line-height: 0;
+  font-weight: bold;
+}
+
+/* PAGINA DE ÉXITO */
+
+.bold {
+  color: #1A1A19;
+  font-weight: 600;
+  padding: 24px 0;
+}
+
+.page-exito {
+  margin: 44px auto;
+}
+
 /* CARRITO */
 
 .table {
