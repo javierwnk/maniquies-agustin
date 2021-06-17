@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script defer src="./js/carrito.js"></script>
 </head>
 <body>
     
@@ -105,8 +106,74 @@
 
     
 <main class="container contenido">
+    <div class="step1" id="step1">
+        <h1 class="section-title-h1">Carrito</h1>
 
-    <h1 class="section-title-h1">Contacto</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Artículo</th>
+                <th scope="col" class="center">Precio unitario</th>
+                <th scope="col" class="center">Cantidad</th>
+                <th scope="col" class="center">Subtotal</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="cart-product-list">
+              
+              
+            </tbody>
+          </table>
+
+          <div class="d-inline" style="width: 100%; height: fit-content;">
+            <button class="add-to-cart" id="next">SIGUIENTE</button>
+        </div>
+
+    </div>
+
+    <div class="step2" id="step2" style="display: none;">
+        <h2 id="back"><span class="iconify" data-icon="bx:bx-arrow-back"></span></h2>
+
+        <div class="last-step">
+            <div class="form">
+                <p class="grey">Complete los siguientes datos para enviar el pedido</p>
+                <h3>Datos para realizar el pedido</h3>
+
+                <form>
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" class="form-control" id="lastname">
+                      </div>
+                      <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="number" class="form-control" id="dni">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="number" class="form-control" id="phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="city">Localidad</label>
+                        <input type="text" class="form-control" id="city">
+                      </div>
+                      <div class="form-group">
+                        <label for="state">Provincia</label>
+                        <input type="text" class="form-control" id="state">
+                      </div>
+                    <button disabled id="send" class="add-to-cart full">Envíar pedido</button>
+
+                  </form>
+            </div>
+
+            <div class="resume" id="resumen">
+                
+            </div>
+        </div>
+    </div>
     
 </main>
 

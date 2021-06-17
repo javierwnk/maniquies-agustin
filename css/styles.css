@@ -20,6 +20,12 @@ input[type=number] {
 -moz-appearance: textfield;
 }
 
+.toast-position {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}
+
 /*HEADER + NAVBAR*/
 
 header {
@@ -296,10 +302,12 @@ footer div nav ul li{
 
 .breadcrumb {
   background-color: #FFF !important;
+  margin-top: 10px;
 }
 
 .breadcrumb-item a{
   color: #000 !important;
+  text-decoration: none;
 }
 
 .product-list {
@@ -348,7 +356,7 @@ footer div nav ul li{
   border: 0.5px solid #CCCCCC;
 }
 
-.active {
+.active-img {
   border: 1px solid #1A1A19;
 }
 
@@ -414,6 +422,11 @@ footer div nav ul li{
   border: none;
   }
 
+  .add-to-cart:hover:enabled {
+    background: #1A1A19;
+    color: #FFF;
+  }
+
   #description {
     margin-top: 10px;
   }
@@ -426,6 +439,7 @@ footer div nav ul li{
 
   #description ul {
     list-style: none;
+    padding-left: 0;
   }
 
   #description li {
@@ -570,4 +584,220 @@ cursor:pointer;
 .logo-socialmedia a, a:hover, a:focus, a:active {
 text-decoration: none;
 color: inherit;
+
+}
+
+/* CARRITO */
+
+.table {
+  margin-top: 44px;
+}
+
+.table .qty {
+  margin-top: 0;
+}
+
+.product-info-2 img {
+  display: inline-block;
+  width: 220px;
+  height: auto;
+}
+
+.product-info-2 p {
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.step1 .add-to-cart {
+  margin: 0 auto !important;
+  display: block;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+#back:hover {
+  cursor: pointer;
+}
+
+td, .center {
+  text-align: center;
+}
+
+.last-step {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.full {
+  width: 100%;
+}
+
+.last-step .form {
+  width: 50%;
+}
+
+.last-step form {
+  width: 100%;
+}
+
+
+.resume-product {
+  margin: 16px 0;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.resume-product img {
+  display: inline-block;
+  width: 165px;
+  margin-right: 24px;
+}
+
+.resume-details {
+  display: inline-block;
+
+}
+
+.grey {
+  color: #5F5C59;
+  font-weight: 400;
+}
+
+.form .grey {
+  font-size: 20px;
+  margin: 32px 0;
+}
+
+.form h3 {
+  margin: 32px 0;
+}
+
+.resume-title {
+  color: #1A1A19;
+  line-height: 0;
+  font-weight: bold;
+}
+
+/* PAGINA DE ÉXITO */
+
+.bold {
+  color: #1A1A19;
+  font-weight: 600;
+  padding: 24px 0;
+}
+
+.page-exito {
+  margin: 44px auto;
+}
+
+/* CARRITO */
+
+.table {
+  margin-top: 44px;
+}
+
+.table .qty {
+  margin-top: 0;
+}
+
+.product-info-2 img {
+  display: inline-block;
+  width: 220px;
+  height: auto;
+}
+
+.product-info-2 p {
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.step1 .add-to-cart {
+  margin: 0 auto !important;
+  display: block;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+#back:hover {
+  cursor: pointer;
+}
+
+td, .center {
+  text-align: center;
+}
+
+.last-step {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.full {
+  width: 100%;
+}
+
+.last-step .form {
+  width: 50%;
+}
+
+.last-step form {
+  width: 100%;
+}
+
+
+.resume-product {
+  margin: 16px 0;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.resume-product img {
+  display: inline-block;
+  width: 165px;
+  margin-right: 24px;
+}
+
+.resume-details {
+  display: inline-block;
+
+}
+
+.grey {
+  color: #5F5C59;
+  font-weight: 400;
+}
+
+.form .grey {
+  font-size: 20px;
+  margin: 32px 0;
+}
+
+.form h3 {
+  margin: 32px 0;
+}
+
+.resume-title {
+  color: #1A1A19;
+  line-height: 0;
+  font-weight: bold;
+}
+
+/* PAGINA DE ÉXITO */
+
+.bold {
+  color: #1A1A19;
+  font-weight: 600;
+  padding: 24px 0;
+}
+
+.page-exito {
+  margin: 44px auto;
+
 }
