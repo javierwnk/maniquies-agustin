@@ -158,13 +158,13 @@
         <h2>Consultas</h2>
         <p>Si no encontraste respuesta a tu pregunta en <a href="./faq.html">Preguntas Frecuentes</a>, completá el siguiente formulario:</p>
         <div>
-            <form action="" method="" class="contact-form">
+            <form action="success.php" method="POST" class="contact-form">
                 <p>Nombre</p>
-                <input type="text" class="form-control" id="name" required>
+                <input type="text" name="name" class="form-control" id="name" required>
                 <p>Email</p>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" name="email" class="form-control" id="email" required>
                 <p>Celular</p>
-                <input type="number" class="form-control" id="phone">
+                <input type="number" name="phone" class="form-control" id="phone">
                 <p>Consulta</p>
                 <textarea name="areacontent" id="areacontent" class="form-control" cols="30" rows="10" required></textarea>
                 <input type="submit" class="contacto-submit" id="sendBtn" value="Enviar consulta" disabled>

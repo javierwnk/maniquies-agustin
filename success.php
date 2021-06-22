@@ -1,21 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maniquíes Agustín - Fabricantes y Distribuidores</title>
-    <link rel="icon" href="./images/MA Opción 2.svg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script defer src="./js/contact.js"></script>
-</head>
-<body>
-    
-    <header class="container-fluid ">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Mensaje envíado con éxito - Maniquíes Agustín</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        
+    </head>
+    <body>
+
+    <?php 
+$nya = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$mensaje = $_POST ['areacontent'];
+
+$mimail="contacto@maniquiesagustin.com";
+
+$cuerpoemail = "Ha recibido una consulta de ".$nya."\r\n"."Email: ".$email."\r\n"."Telefono de contacto: ".$phone."\r\n"."Mensaje: ".$mensaje;
+$cuerpoenvio = "Se ha enviado su consulta a Maniquies Agustin "."\r\n"."Teléfono: ".$phone."\r\n"."Mensaje: ".$mensaje."\r\n"."Le responderemos a la brevedad"."\r\n"."Por favor, no responda este mensaje";
+$respuesta ="From: $nya <$email>";
+$respuestaenvio ="From: Maniquies Agustin <contacto@maniquiesagustin.com>";
+
+mail ($mimail, "Ha recido una nueva consulta", $cuerpoemail, $respuesta);
+mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $respuestaenvio);
+?>
+
+<header class="container-fluid ">
         <div class="container head">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-expanded="false">
@@ -103,38 +118,15 @@
             </nav>
         </div>
     </header>
-    <main class="container contenido">
-        <div class="container-fluid">
-            <div class="row">
-                <h1 class="section-title-h1">Contacto</h1>
-                <div class="estiloB">
-                    <p>Para realizar consultas, puede llenar el siguiente formulario o contactarnos a traves de Whatsapp o mail.</p>
-                    <div class="estiloC">
-                        <a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a>
-                        <a href="#" class="sizeCont2"><span class="iconify" data-icon="feather:mail" data-inline="false"></span> contacto@maniquiesagustin.com</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div>
-            <form action="success.php" method="POST" class="contact-form">
-                <p>Nombre</p>
-                <input type="text" name="name" class="form-control" id="name" required>
-                <p>Email</p>
-                <input type="email" name="email" class="form-control" id="email" required>
-                <p>Celular</p>
-                <input type="number" name="phone" class="form-control" id="phone">
-                <p>Consulta</p>
-                <textarea name="areacontent" id="areacontent" class="form-control" cols="30" rows="10" required></textarea>
-                <input type="submit" class="contacto-submit" id="sendBtn" value="Enviar consulta" disabled>
-            </form>   
-        </div>
-    
-    </main>
 
     
+<main class="container contenido">
 
+    <h1 class="section-title-h1 bold">¡Su consulta fue enviada exitosamente!</h1>
+    <p class="grey">Pronto nos estaremos comunicando con usted.</p>
+    <a href="catalogo.html?all=true" style="text-decoration: none;"><button class="btn-principal page-exito">Ver catálogo</button></a>
+    
+</main>
 
 
 <footer>
@@ -172,5 +164,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
