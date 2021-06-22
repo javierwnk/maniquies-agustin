@@ -18,7 +18,7 @@
 <header class="container-fluid ">
     <div class="container head">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-expanded="false">
+            <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
@@ -27,6 +27,7 @@
                     <li class="navbar-item active">
                         <a href="index.html" class="nav-link">Inicio</a>
                     </li>
+                    <hr>
                     <li class="navbar-item active dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Productos<span class="iconify" data-icon="ant-design:caret-down-outlined"></span></a>
                         <ul class="dropdown-menu">
@@ -35,7 +36,7 @@
                                     <li class="dropdown-item"> Maniquíes</li>
                                     <div class="dropdown-divider"></div>
                                     <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-xs-12">
                                         <ul class="mega-Menu">
                                             <li class="dropdown-item"><b>Mujer</b></li>
                                             <li><a href='catalogo.html?gender=mujer&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
@@ -49,7 +50,7 @@
                                         </ul>
                                        <a href="catalogo.html?gender=ninos&mainCategory=maniquies" class="dropdown-item Item-1"><b>Niños</b></a>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-xs-12">
                                         <ul class="mega-Menu">
                                             <li class="dropdown-item"><b>Hombre</b></li>
                                             <li><a href='catalogo.html?gender=hombre&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
@@ -87,16 +88,16 @@
                             </li>
                             <li><a href="catalogo.html?all=true" class="dropdown-item">Ver todo</a></li>
                         </ul>
-                    </li>
+                    </li><hr>
                     <li class="navbar-item active">
                         <a href="about.html" class="nav-link">Sobre Nosotros</a>
-                    </li>
+                    </li><hr>
                     <li class="navbar-item active">
                         <a href="faq.html" class="nav-link">Preguntas Frecuentes</a>
-                    </li>
+                    </li><hr>
                     <li class="navbar-item active">
                         <a href="contacto.html" class="nav-link">Contacto</a>
-                    </li>
+                    </li><hr>
                 </ul>
             </div>
             <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
@@ -177,7 +178,7 @@
 <footer class="container-fluid">
     <div class="container">
         <nav class="row">
-            <ul class="col-3 list-unstyled">
+            <ul class="col-xs-12 col-md-3 list-unstyled">
                 <li><b>Navegacion</b></li>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
@@ -185,24 +186,28 @@
                 <li><a href="#">Preguntas Frecuentes</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <ul class="col-3 list-unstyled">
+            <hr>
+            <ul class="col-xs-12 col-md-3 list-unstyled">
                 <li><b>Medios de Pago</b></li>
                 <li><a href="#">MercadoPago</a></li>
                 <li><a href="#">Efectivo</a></li>
                 <li><a href="#">Transferencia Bancaria</a></li>
                 <li><a href="#">Imagenes de tarjetas</a></li>
             </ul>
-            <ul class="col-3 list-unstyled">
+            <hr>
+            <ul class="col-xs-12 col-md-3 list-unstyled">
                 <li><b>Contactanos</b></li>
                 <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
                 <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#" class="SizeCont"> contacto@maniquiesagustin.com</a></li>
                 <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
             </ul>
-            <ul class="col-3 list-unstyled">
+            <hr>
+            <ul class="col-xs-12 col-md-3 list-unstyled">
                 <li><b>Redes Sociales</b></li>
                 <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
                 <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
             </ul>
+            <hr>
         </nav>
     </div>
 </footer>
