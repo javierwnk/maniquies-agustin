@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script defer src="./js/contact.js"></script>
+    <script defer src="./js/menu-mobile.js"></script>
 </head>
 <body>
     
-    <header class="container-fluid ">
-        <div class="container head">
+    <header class="container-fluid">
+        <div class="container head header-desktop">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
@@ -102,8 +103,25 @@
                 <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
             </nav>
         </div>
+
+        <div class="container header-mobile">
+            <div class="hamburger" id="hamburger">
+               <span class="iconify cart-icon" data-icon="ant-design:menu-outlined" height="22px"></span>
+            </div>
+            <div class="header-mobile-logo">
+                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
+            </div>
+            <div class="carrito-mobile">
+                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
+            </div>
+        </div>
+
+        <div class="container-fluid menu-mobile" id="menu-mobile" style="visibility: hidden;">
+
+
+        </div>
     </header>
-    <main class="container contenido">
+    <main class="container contenido" id="main">
         <div class="container-fluid">
             <div class="row">
                 <h1 class="section-title-h1">Contacto</h1>
@@ -137,7 +155,7 @@
 
 
 
-    <footer class="container-fluid">
+    <footer class="container-fluid" id="form">
         <div class="container">
             <nav class="row">
                 <ul class="col-xs-12 col-md-3 list-unstyled">

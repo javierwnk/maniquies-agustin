@@ -29,6 +29,12 @@ input[type=number] {
   right: 20px;
 }
 
+/* HEADER STATUS */
+
+.header-mobile {
+  display: none;
+}
+
 /*HEADER + NAVBAR*/
 
 header {
@@ -107,6 +113,8 @@ nav {
   padding: 10px;
   margin: auto;
 }
+
+
 
 /*CARDS*/
 
@@ -951,7 +959,66 @@ footer{
    height: 750px
  };
 }
+
+  /* CAMBIA EL HEADER A MOBILE */
+
+@media all and (max-width: 990px) {
+
+.header-desktop {
+  display: none;
+}
+
+/* HEADER MOBILE */
+
+.header-mobile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.header-mobile .hamburger, .header-mobile .carrito-mobile {
+  height: fit-content;
+  padding: 15px 0;
+}
+
+.header-mobile .iconify {
+  color: #FFF;
+
+}
+
+.menu-mobile {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1A1A19;
+  display: flex;
+  flex-flow: column nowrap;
+  color: #FCF8F3;
+}
+
+.mobile-menu-action {
+  padding: 20px 10px;
+  text-align: end;
+}
+
+.mobile-menu-item {
+  border-bottom: 0.5px solid #CCCCCC;
+  margin-top: 20px;
+}
+
+.mobile-menu-item p {
+  margin: 5px;
+  color: #FCF8F3;
+
+}
+
+}
+
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
+
 }
