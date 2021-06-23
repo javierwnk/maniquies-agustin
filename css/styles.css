@@ -829,9 +829,8 @@ td, .center {
    position: absolute !important;
    background-color: #1A1A19;
  }
- .cart-icon{
 
- }
+
  /*CARDS*/
 
  .hero{
@@ -849,6 +848,7 @@ td, .center {
  .card-list{
    display: flex;
    flex-direction: column;
+   width: 100%;
  }
  .card-categoria {
   height: 464px;
