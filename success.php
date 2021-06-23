@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Mensaje envíado con éxito - Maniquíes Agustín</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <script defer src="./js/menu-mobile.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maniquíes Agustín - Fabricantes y Distribuidores</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script defer src="./js/menu-mobile.js"></script>
-</head>
+        
+    </head>
+    <body>
 
-<body>
+    <?php 
+$nya = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$mensaje = $_POST ['areacontent'];
 
-    <header class="container-fluid">
+$mimail="contacto@maniquiesagustin.com";
+
+$cuerpoemail = "Ha recibido una consulta de ".$nya."\r\n"."Email: ".$email."\r\n"."Telefono de contacto: ".$phone."\r\n"."Mensaje: ".$mensaje;
+$cuerpoenvio = "Se ha enviado su consulta a Maniquies Agustin "."\r\n"."Teléfono: ".$phone."\r\n"."Mensaje: ".$mensaje."\r\n"."Le responderemos a la brevedad"."\r\n"."Por favor, no responda este mensaje";
+$respuesta ="From: $nya <$email>";
+$respuestaenvio ="From: Maniquies Agustin <contacto@maniquiesagustin.com>";
+
+mail ($mimail, "Ha recido una nueva consulta", $cuerpoemail, $respuesta);
+mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $respuestaenvio);
+?>
+
+<header class="container-fluid">
         <div class="container head header-desktop">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button"
@@ -160,120 +175,50 @@
         </div>
     </header>
 
-    <main id="main">
+    
+<main class="container contenido" id="main">
 
-        <div class="container estilo-carousel">
-            <div class="info show-off">
-                <h1>Sobre Nosotros</h1>
-            </div>
-            <div class="info show-on">
-                <h1>Sobre Nosotros</h1>
-                <p>Maniquíes Agustin es una empresa familiar con años de experiencia en el rubro.<br>Nuestra mision es
-                    mantenernos como empresa lider del mercado priorizando siempre los valores familiares que nos
-                    destacan y nuestra atencion primordial al cliente.</p>
-            </div>
-            <div class="carousel slide" id="sliderAU" data-ride="carousel">
-                <ol class="carousel-indicators slider-indicators">
-                    <li data-target="#sliderAU" data-slide-to="0" class="active"></li>
-                    <li data-target="#sliderAU" data-slide-to="1"></li>
-                    <li data-target="#sliderAU" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/hero-main.png" alt="img 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/hero-main.png" alt="img 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/hero-main.png" alt="img 3">
-                    </div>
-                </div>
-            </div>
-            <div class="show-off">
-                <p>Maniquíes Agustin es una empresa familiar con años de experiencia en el rubro.<br>Nuestra mision es
-                    mantenernos como empresa lider del mercado priorizando siempre los valores familiares que nos
-                    destacan y nuestra atencion primordial al cliente.</p>
-            </div>
-        </div>
-        <div class="container estilo-mapa">
-            <div class="hero-img">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.511855078177!2d-58.757314784770685!3d-34.591216180462766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9613db4e32a5%3A0x7da16fc46503d263!2sSan%20Emilio%201202%2C%20B1736GYF%20Trujui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623858183140!5m2!1ses!2sar"
-                    width="550" height="410" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="info estiloA">
-                <h1>Showroom</h1>
-                <p>Ubicacion: San Emilio 1202, Moreno</p>
-                <div class="no-show">
-                    <p>Horario de Atención:</p>
-                    <p class="horario">-Lunes a Viernes de 10 a 18 hs.</p>
-                </div>
-            </div>
-        </div>
+    <h1 class="section-title-h1 bold">¡Su consulta fue enviada exitosamente!</h1>
+    <p class="grey">Pronto nos estaremos comunicando con usted.</p>
+    <a href="catalogo.html?all=true" style="text-decoration: none;"><button class="btn-principal page-exito">Ver catálogo</button></a>
+    
+</main>
 
-        <div class="container">
-            <div class="titulo-socialmedia">
-                <h1>Seguínos en las Redes</h1>
-            </div>
-            <div class="logo-socialmedia">
-                <a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false" height="65px"
-                        width="65px"></span></a>
-                <a href="#"><span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false" height="65px"
-                        width="65px"></span></a>
-                <a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false" height="65px"
-                        width="65px"></span></a>
-            </div>
-        </div>
 
-    </main>
-
-    <footer class="container-fluid" id="footer">
-        <div class="container">
-            <nav class="row">
-                <ul class="col-xs-12 col-md-3 list-unstyled">
-                    <li><b>Navegacion</b></li>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <hr>
-                <ul class="col-xs-12 col-md-3 list-unstyled">
-                    <li><b>Medios de Pago</b></li>
-                    <li><a href="#">MercadoPago</a></li>
-                    <li><a href="#">Efectivo</a></li>
-                    <li><a href="#">Transferencia Bancaria</a></li>
-                    <li><a href="#">Imagenes de tarjetas</a></li>
-                </ul>
-                <hr>
-                <ul class="col-xs-12 col-md-3 list-unstyled">
-                    <li><b>Contactanos</b></li>
-                    <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
-                    <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#" class="SizeCont"> contacto@maniquiesagustin.com</a></li>
-                    <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
-                </ul>
-                <hr>
-                <ul class="col-xs-12 col-md-3 list-unstyled">
-                    <li><b>Redes Sociales</b></li>
-                    <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
-                    <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
-                </ul>
-                <hr>
-            </nav>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
-</body>
-
+<footer id="footer">
+    <div class="container">
+        <nav class="row">
+            <ul class="col-3 list-unstyled">
+                <li><b>Navegacion</b></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Medios de Pago</b></li>
+                <li><a href="#">MercadoPago</a></li>
+                <li><a href="#">Efectivo</a></li>
+                <li><a href="#">Transferencia Bancaria</a></li>
+                <li><a href="#">Imagenes de tarjetas</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Contactanos</b></li>
+                <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
+                <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#" class="SizeCont"> contacto@maniquiesagustin.com</a></li>
+                <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+                <li><b>Redes Sociales</b></li>
+                <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
+                <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
 </html>

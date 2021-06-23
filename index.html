@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,211 +8,288 @@
     <title>Maniquíes Agustín - Fabricantes y Distribuidores</title>
     <link rel="icon" href="./images/MA Opción 2.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script defer src="./js/contact.js"></script>
+    <script defer src="./js/menu-mobile.js"></script>
 </head>
+
 <body>
-    
-<header class="container-fluid ">
-    <div class="container head">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="navbar-item active">
-                        <a href="index.html" class="nav-link">Inicio</a>
-                    </li>
-                    <hr>
-                    <li class="navbar-item active dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Productos<span class="iconify" data-icon="ant-design:caret-down-outlined"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Maniquies<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item"> Maniquíes</li>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="row">
-                                    <div class="col-md-6 col-xs-12">
-                                        <ul class="mega-Menu">
-                                            <li class="dropdown-item"><b>Mujer</b></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=2&mainCategory=maniquies' class="dropdown-item">Colgante</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=3&mainCategory=maniquies' class="dropdown-item">Bustos</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=4&mainCategory=maniquies' class="dropdown-item">Lenceria</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=5&mainCategory=maniquies' class="dropdown-item">Cabeza</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=6&mainCategory=maniquies' class="dropdown-item">Piernas</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&secondCategory=7&mainCategory=maniquies' class="dropdown-item">Fibra de Vidrio</a></li>
-                                            <li><a href='catalogo.html?gender=mujer&mainCategory=maniquies' class="dropdown-item">Ver todo en mujer</a></li>
-                                        </ul>
-                                       <a href="catalogo.html?gender=ninos&mainCategory=maniquies" class="dropdown-item Item-1"><b>Niños</b></a>
-                                    </div>
-                                    <div class="col-md-6 col-xs-12">
-                                        <ul class="mega-Menu">
-                                            <li class="dropdown-item"><b>Hombre</b></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=2&mainCategory=maniquies' class="dropdown-item">Colgante</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=3&mainCategory=maniquies' class="dropdown-item">Bustos</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=4&mainCategory=maniquies' class="dropdown-item">Lenceria</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=5&mainCategory=maniquies' class="dropdown-item">Cabeza</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=6&mainCategory=maniquies' class="dropdown-item">Piernas</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&secondCategory=7&mainCategory=maniquies' class="dropdown-item">Fibra de Vidrio</a></li>
-                                            <li><a href='catalogo.html?gender=hombre&mainCategory=maniquies' class="dropdown-item">Ver todo en hombre</a></li>
-                                        </ul>
-                                        <a href="catalogo.html?mainCategory=maniquies"class="dropdown-item Item-1"><b>Ver todo en Maniquies</b></a>
-                                    </div>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li><a href="catalogo.html?mainCategory=modistas" class="dropdown-item">Modista</a></li>
-                            <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Equipamiento comercial<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
-                                <ul class="dropdown-menu heightMenu">
-                                    <li class="dropdown-item">Equipamiento Comercial</li>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="row">
-                                    <div class="col-md-6">
-                                        <ul class="mega-Menu">
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=8" class="dropdown-item">Perchas</a></li>
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=9"  class="dropdown-item">Percheros</a></li>
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=10"  class="dropdown-item">Portacarteras</a></li>
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=11"  class="dropdown-item">Mensulas</a></li>
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=12"  class="dropdown-item">Ganchos S</a></li>
-                                            <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=13"  class="dropdown-item">Cajas Registradora</a></li>
-                                        </ul>
-                                       <a href="catalogo.html?mainCategory=equipamiento" class="dropdown-item Item-2"><b>Ver todo en equipamiento comercial</b></a>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li><a href="catalogo.html?all=true" class="dropdown-item">Ver todo</a></li>
-                        </ul>
-                    </li><hr>
-                    <li class="navbar-item active">
-                        <a href="about.html" class="nav-link">Sobre Nosotros</a>
-                    </li><hr>
-                    <li class="navbar-item active">
-                        <a href="faq.html" class="nav-link">Preguntas Frecuentes</a>
-                    </li><hr>
-                    <li class="navbar-item active">
-                        <a href="contacto.html" class="nav-link">Contacto</a>
-                    </li><hr>
+
+    <header class="container-fluid">
+        <div class="container head header-desktop">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button"
+                    aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto"
+                        alt="Logo Maniquies Agustin"></a></a>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="navbar-item active">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="navbar-item active dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                data-target="desplegable">Productos<span class="iconify"
+                                    data-icon="ant-design:caret-down-outlined"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="#"
+                                        class="dropdown-item dropdown-toggle">Maniquies<span class="iconify"
+                                            data-icon="ant-design:caret-right-outlined"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"> Maniquíes</li>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="mega-Menu">
+                                                    <li class="dropdown-item"><b>Mujer</b></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=1&mainCategory=maniquies'
+                                                            class="dropdown-item">Cuerpo completo</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=2&mainCategory=maniquies'
+                                                            class="dropdown-item">Colgante</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=3&mainCategory=maniquies'
+                                                            class="dropdown-item">Bustos</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=4&mainCategory=maniquies'
+                                                            class="dropdown-item">Lenceria</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=5&mainCategory=maniquies'
+                                                            class="dropdown-item">Cabeza</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=6&mainCategory=maniquies'
+                                                            class="dropdown-item">Piernas</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=7&mainCategory=maniquies'
+                                                            class="dropdown-item">Fibra de Vidrio</a></li>
+                                                    <li><a href='catalogo.html?gender=mujer&mainCategory=maniquies'
+                                                            class="dropdown-item">Ver todo en mujer</a></li>
+                                                </ul>
+                                                <a href="catalogo.html?gender=ninos&mainCategory=maniquies"
+                                                    class="dropdown-item Item-1"><b>Niños</b></a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="mega-Menu">
+                                                    <li class="dropdown-item"><b>Hombre</b></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=1&mainCategory=maniquies'
+                                                            class="dropdown-item">Cuerpo completo</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=2&mainCategory=maniquies'
+                                                            class="dropdown-item">Colgante</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=3&mainCategory=maniquies'
+                                                            class="dropdown-item">Bustos</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=4&mainCategory=maniquies'
+                                                            class="dropdown-item">Lenceria</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=5&mainCategory=maniquies'
+                                                            class="dropdown-item">Cabeza</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=6&mainCategory=maniquies'
+                                                            class="dropdown-item">Piernas</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=7&mainCategory=maniquies'
+                                                            class="dropdown-item">Fibra de Vidrio</a></li>
+                                                    <li><a href='catalogo.html?gender=hombre&mainCategory=maniquies'
+                                                            class="dropdown-item">Ver todo en hombre</a></li>
+                                                </ul>
+                                                <a href="catalogo.html?mainCategory=maniquies"
+                                                    class="dropdown-item Item-1"><b>Ver todo en Maniquies</b></a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="catalogo.html?mainCategory=modistas" class="dropdown-item">Modista</a></li>
+                                <li class="dropdown-submenu"><a href="#"
+                                        class="dropdown-item dropdown-toggle">Equipamiento comercial<span
+                                            class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
+                                    <ul class="dropdown-menu heightMenu">
+                                        <li class="dropdown-item">Equipamiento Comercial</li>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="mega-Menu">
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=8"
+                                                            class="dropdown-item">Perchas</a></li>
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=9"
+                                                            class="dropdown-item">Percheros</a></li>
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=10"
+                                                            class="dropdown-item">Portacarteras</a></li>
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=11"
+                                                            class="dropdown-item">Mensulas</a></li>
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=12"
+                                                            class="dropdown-item">Ganchos S</a></li>
+                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=13"
+                                                            class="dropdown-item">Cajas Registradora</a></li>
+                                                </ul>
+                                                <a href="catalogo.html?mainCategory=equipamiento"
+                                                    class="dropdown-item Item-2"><b>Ver todo en equipamiento
+                                                        comercial</b></a>
+                                            </div>
+                                    </ul>
+                                </li>
+                                <li><a href="catalogo.html?all=true" class="dropdown-item">Ver todo</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item active">
+                            <a href="about.html" class="nav-link">Sobre Nosotros</a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a href="faq.html" class="nav-link">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined"
+                        height="22px"></span></a>
+            </nav>
+        </div>
+
+        <div class="container header-mobile">
+            <div class="hamburger" id="hamburger">
+                <span class="iconify cart-icon" data-icon="ant-design:menu-outlined" height="22px"></span>
+            </div>
+            <div class="header-mobile-logo">
+                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto"
+                        alt="Logo Maniquies Agustin"></a></a>
+            </div>
+            <div class="carrito-mobile">
+                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined"
+                        height="22px"></span></a>
+            </div>
+        </div>
+
+        <div class="container-fluid menu-mobile" id="menu-mobile" style="visibility: hidden;">
+
+
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container-fluid cartel-info">
+            <div class="shipping">
+                <span class="iconify" data-icon="la:shipping-fast"></span>
+                <p>Envíos a todo el país</p>
+            </div>
+            <div class="payment">
+                <span class="iconify" data-icon="la:money-bill-wave"></span>
+                <p>Descuentos en efectivo</p>
+            </div>
+        </div>
+
+        <div class="container hero">
+            <div class="info">
+                <h1>Somos Fabricantes</h1>
+                <p>Maniquíes Agustín es uno de los tres fabricantes de maniquíes de plástico en Argentina. Esto nos
+                    permite ofrecer los mejores precios del mercado.</p>
+                <a href="catalogo.html?all=true" class="btn-principal">Ver Productos</a>
+            </div>
+            <div class="hero-img">
+                <img src="./images/hero-main.png" alt="Imagen con maniquies">
+            </div>
+        </div>
+
+        <section class="productos">
+            <div class="container">
+                <h2>Productos</h2>
+                <div class="card-list">
+                    <div class="card-categoria" id="card-maniqui">
+                        <div class="card-content">
+                            <p class="card-title">Maniquíes</p>
+                            <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes,
+                                bustos, lenceria, plus size y más.</p>
+                            <a href="catalogo.html?mainCategory=maniquies" class="btn-card">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-categoria" id="card-modista">
+                        <div class="card-content">
+                            <p class="card-title">Modistas</p>
+                            <p class="description">Estos maniquíes son ideales para estudiantes de indumentaria.
+                                Descubra los modelos disponibles.</p>
+                            <a href="catalogo.html?mainCategory=modistas" class="btn-card">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-categoria" id="card-equipamiento">
+                        <div class="card-content">
+                            <p class="card-title">Equipamiento Comercial</p>
+                            <p class="description">Equipé su local con nuestros productos de primera calidad.</p>
+                            <a href="catalogo.html?mainCategory=equipamiento" class="btn-card">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <div class="container">
+                <h2>Consultas</h2>
+                <p>Si no encontraste respuesta a tu pregunta en <a href="./faq.html">Preguntas Frecuentes</a>, completá
+                    el siguiente formulario:</p>
+                <div>
+                    <form action="success.php" method="POST" class="contact-form">
+                        <p>Nombre</p>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                        <p>Email</p>
+                        <input type="email" name="email" class="form-control" id="email" required>
+                        <p>Celular</p>
+                        <input type="number" name="phone" class="form-control" id="phone">
+                        <p>Consulta</p>
+                        <textarea name="areacontent" id="areacontent" class="form-control" cols="30" rows="10"
+                            required></textarea>
+                        <input type="submit" class="contacto-submit" id="sendBtn" value="Enviar consulta" disabled>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid" id="footer">
+        <div class="container">
+            <nav class="row">
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Navegacion</b></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
-            </div>
-            <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
-        </nav>
-    </div>
-</header>
-
-<div class="container-fluid cartel-info">
-    <div class="shipping">
-        <span class="iconify" data-icon="la:shipping-fast"></span><p>Envíos a todo el país</p>
-    </div>
-    <div class="payment">
-        <span class="iconify" data-icon="la:money-bill-wave"></span><p>Descuentos en efectivo</p>
-    </div>
-</div>
-    
-<div class="container hero">
-    <div class="info">
-        <h1>Somos Fabricantes</h1>
-        <p>Maniquíes Agustín es uno de los tres fabricantes de maniquíes de plástico en Argentina. Esto nos permite ofrecer los mejores precios del mercado.</p>
-        <a href="" class="btn-principal">Ver Productos</a>
-    </div>
-    <div class="hero-img">
-        <img src="./images/hero-main.png" alt="Imagen con maniquies">
-    </div>
-</div>
-
-<section class="productos">
-    <div class="container">
-        <h2>Productos</h2>
-        <div class="card-list">
-            <div class="card-categoria">
-                <div class="card-content">
-                    <p class="card-title">Maniquíes</p>
-                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                    <a href="" class="btn-card">Ver más</a>
-                </div>
-            </div>
-            <div class="card-categoria">
-                <div class="card-content">
-                    <p class="card-title">Maniquíes</p>
-                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                    <a href="" class="btn-card">Ver más</a>
-                </div>
-            </div>
-            <div class="card-categoria">
-                <div class="card-content">
-                    <p class="card-title">Maniquíes</p>
-                    <p class="description">Calidad y variedad: mujer, hombre, niño, cuerpo completo, colgantes, bustos, lenceria, plus size y más.</p>
-                    <a href="" class="btn-card">Ver más</a>
-                </div>
-            </div>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Medios de Pago</b></li>
+                    <li><a href="#">MercadoPago</a></li>
+                    <li><a href="#">Efectivo</a></li>
+                    <li><a href="#">Transferencia Bancaria</a></li>
+                    <li><a href="#">Imagenes de tarjetas</a></li>
+                </ul>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Contactanos</b></li>
+                    <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill"
+                                data-inline="false"></span> +54 9 11 3033-3174</a></li>
+                    <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#"
+                            class="SizeCont"> contacto@maniquiesagustin.com</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line"
+                                data-inline="false"></span> San Emilio 1202, Moreno</a></li>
+                </ul>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Redes Sociales</b></li>
+                    <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false"
+                                height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span>
+                            /maniquies_agustin</a></li>
+                </ul>
+                <hr>
+            </nav>
         </div>
-    </div>
-</section>
-
-<section class="formulario">
-    <div class="container">
-        <h2>Consultas</h2>
-        <p>Si no encontraste respuesta a tu pregunta en <a href="./faq.html">Preguntas Frecuentes</a>, completá el siguiente formulario:</p>
-        <div>
-            <form action="" method="" class="contact-form">
-                <p>Nombre</p>
-                <input type="text" class="form-control" id="name">
-                <p>Email</p>
-                <input type="email" class="form-control" id="email">
-                <p>Celular</p>
-                <input type="number" class="form-control" id="phone">
-                <p>Consulta</p>
-                <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
-                <input type="submit" class="contacto-submit" value="Enviar consulta">
-            </form>   
-        </div>
-    </div>
-</section>
-
-
-<footer class="container-fluid">
-    <div class="container">
-        <nav class="row">
-            <ul class="col-xs-12 col-md-3 list-unstyled">
-                <li><b>Navegacion</b></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <hr>
-            <ul class="col-xs-12 col-md-3 list-unstyled">
-                <li><b>Medios de Pago</b></li>
-                <li><a href="#">MercadoPago</a></li>
-                <li><a href="#">Efectivo</a></li>
-                <li><a href="#">Transferencia Bancaria</a></li>
-                <li><a href="#">Imagenes de tarjetas</a></li>
-            </ul>
-            <hr>
-            <ul class="col-xs-12 col-md-3 list-unstyled">
-                <li><b>Contactanos</b></li>
-                <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
-                <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#" class="SizeCont"> contacto@maniquiesagustin.com</a></li>
-                <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
-            </ul>
-            <hr>
-            <ul class="col-xs-12 col-md-3 list-unstyled">
-                <li><b>Redes Sociales</b></li>
-                <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
-                <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
-            </ul>
-            <hr>
-        </nav>
-    </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
