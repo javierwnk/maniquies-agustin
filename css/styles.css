@@ -1035,6 +1035,10 @@ footer{
   color: #FCF8F3;
 }
 
+.menu-mobile a {
+  text-decoration: none;
+}
+
 .mobile-menu-action {
   padding: 20px 10px;
   text-align: end;

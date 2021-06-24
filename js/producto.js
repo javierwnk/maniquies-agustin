@@ -31,6 +31,7 @@ fs.doc("products/" + idProducto)
 .get()
 .then((doc) => {
     producto = doc.data()
+    window.document.title = doc.data().name
     buildProduct()
 })
 

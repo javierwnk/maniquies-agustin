@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link rel="icon" href="./images/MA Opción 2.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Mensaje envíado con éxito - Maniquíes Agustín</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -185,38 +186,46 @@ mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $resp
 </main>
 
 
-<footer id="footer">
-    <div class="container">
-        <nav class="row">
-            <ul class="col-3 list-unstyled">
-                <li><b>Navegacion</b></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <ul class="col-3 list-unstyled">
-                <li><b>Medios de Pago</b></li>
-                <li><a href="#">MercadoPago</a></li>
-                <li><a href="#">Efectivo</a></li>
-                <li><a href="#">Transferencia Bancaria</a></li>
-                <li><a href="#">Imagenes de tarjetas</a></li>
-            </ul>
-            <ul class="col-3 list-unstyled">
-                <li><b>Contactanos</b></li>
-                <li><a href="#"><span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span> +54 9 11 3033-3174</a></li>
-                <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="#" class="SizeCont"> contacto@maniquiesagustin.com</a></li>
-                <li><a href="#"><span class="iconify" data-icon="clarity:map-marker-line" data-inline="false"></span> San Emilio 1202, Moreno</a></li>
-            </ul>
-            <ul class="col-3 list-unstyled">
-                <li><b>Redes Sociales</b></li>
-                <li><a href="#"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false" height="22px" width="22px"></span>/ManiquiesAgustin</a></li>
-                <li><a href="#"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span> /maniquies_agustin</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
+<footer class="container-fluid" id="footer">
+        <div class="container">
+            <nav class="row">
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Navegacion</b></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html?all=true">Productos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Medios de Pago</b></li>
+                    <li>MercadoPago</li>
+                    <li>Efectivo</li>
+                    <li>Transferencia Bancaria</li>
+                </ul>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Contactanos</b></li>
+                    <li><a href="https://wa.me/5491130333174"><span class="iconify" data-icon="akar-icons:whatsapp-fill"
+                                data-inline="false"></span> (011) 3033-3174</a></li>
+                    <li><span class="iconify" data-icon="feather:mail" data-inline="false"></span><a href="mailto:contacto@maniquiesagustin.com"
+                            class="SizeCont"> contacto@maniquiesagustin.com</a></li>
+                    <li><span class="iconify" data-icon="clarity:map-marker-line"
+                                data-inline="false"></span> San Emilio 1202, Moreno</li>
+                </ul>
+                <hr>
+                <ul class="col-xs-12 col-md-3 list-unstyled">
+                    <li><b>Redes Sociales</b></li>
+                    <li><a href="https://www.facebook.com/ManiquiesAgustin"><span class="iconify" data-icon="ri:facebook-circle-line" data-inline="false"
+                                height="22px" width="22px"></span> ManiquiesAgustin</a></li>
+                    <li><a href="https://www.instagram.com/maniquies_agustin/"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span>
+                             maniquies_agustin</a></li>
+                </ul>
+                <hr>
+            </nav>
+        </div>
+    </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
