@@ -563,7 +563,7 @@ footer div nav ul li{
   align-items: center;
   margin-top: 44px; 
   margin-bottom: 88px;}
-.estilo-carousel p {
+.estilo-carousel  .show-on p {
   display: block;
   width: 85%;
   margin-top: 18px; 
@@ -604,9 +604,13 @@ footer div nav ul li{
   color: #0060B6;
   text-decoration: none;
   margin-left: 40px;
-  margin-right: 40px
-
+  margin-right: 40px;
 }
+
+.logo-socialmedia .iconify{
+  font-size:  65px;
+}
+
 .logo-socialmedia a:hover {
 color:#00A0C6; 
 text-decoration:none; 
@@ -862,7 +866,7 @@ td, .center {
    flex-direction: column-reverse;
  }
  .hero-img img{
-   width: 370px;
+   width: 350px;
    height: 280px;
    margin: 0
  }
@@ -872,7 +876,7 @@ td, .center {
  .card-list{
    display: flex;
    flex-direction: column;
-   width: 100%;
+   align-items: center;
  }
  .card-categoria {
   height: 464px;
@@ -915,7 +919,16 @@ form{
   flex-direction: row;
 }
 .carousel{
-  width: 370px;
+  width: 350px;
+  height: 280px;
+}
+.carousel-indicators li{
+  top: 200px;
+}
+
+.show-off p {
+  margin-top: 150px;
+  margin-bottom: 10px;
 }
 
 .estilo-carousel {
@@ -952,11 +965,34 @@ form{
   height: 210px;
 }
 
+.titulo-socialmedia h1{
+  font-size: 170%;
+}
+.logo-socialmedia .iconify{
+  font-size: 45px;  
+}
+
+/*VIEW CONTACTO*/
+
+.estiloB{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 10px;
+  
+}
+.estiloB p{
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  width: 300px;
+
+}
 
 
 /*FOOTER*/
 footer{
-   height: 750px
+   height:fit-content
  };
 }
 
@@ -1017,8 +1053,149 @@ footer{
 
 }
 
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 580px) and (max-width: 990px) {
+  hr{
+    display: block;
+    background-color: #8B8B8B;
+    margin-top: 2px;
+  }
+  /*HEADER + NAVBAR*/
+  .navbar-nav > li{
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+ .navbar-nav{
+   position: absolute !important;
+   background-color: #1A1A19;
+ }
 
+
+ /*CARDS*/
+
+ .hero{
+   display: flex;
+   flex-direction: column-reverse;
+ }
+ .hero-img img{
+   width: 600px;
+   height: 420px;
+   margin: 0
+ }
+ .hero .info{
+   margin-top:50px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ .hero .info h1{
+   margin-left: 50px;
+ }
+ .card-list{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .card-categoria {
+  height: 444px;
+  width: 300px;
+  margin: 20px ; 
+}
+/*FORMULARIO*/
+form{
+  width: 550px;
+}
+.contacto-submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 400px;
+  height: 53px;
+  margin: 80px auto 100px auto;
+  background: #CCCCCC;
+  box-shadow: 0px 5px 15px rgba(26, 26, 25, 0.25);
+  border-radius: 3.7;
+  border: none;
+  outline: none;
+}
+
+/*VIEW SOBRE NOSOTROS */
+.show-on{
+  display:none;
+}
+
+.show-off{
+  display: inline;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.carousel{
+  width: 600px;
+  height: 420px;
+  margin-left: 50px;
+}
+
+.estilo-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px; 
+  margin-bottom: 0px;
+}
+
+.carousel-indicators li{
+  right: 30px;
+}
+
+.show-off p{
+  width: 550px;
+  margin-top: 20px;
+}
+
+.no-show{
+  display:none;
+}
+
+.estilo-mapa{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0;
+}
+.estilo-mapa .info{
+  margin-right: 50px;
+}
+.info h1{
+  margin-right: 50px;
+}
+
+.hero-img iframe{
+  width: 500px;
+  height: 300px;
+}
+
+.logo-socialmedia .iconify{
+  font-size: 60px;  
+}
+
+/*VIEW CONTACTO*/
+
+
+
+/*FOOTER*/
+footer{
+   height: fit-content
+ }
+ .SizeCont{
+   font-size: 60%;
+ }
+
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .card-categoria {
+    height: 424px;
+    width: 300px;
+    margin: 20px ; 
+  
+  }
 }
