@@ -879,8 +879,8 @@ td, .center {
    align-items: center;
  }
  .card-categoria {
-  height: 464px;
-  width: 300px;
+  height: 460px;
+  width: 320px;
   margin: 20px ; 
 
 }
@@ -987,6 +987,91 @@ form{
   align-self: start;
   width: 300px;
 
+}
+
+
+/* CATALOGO */
+
+.product-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-images img{
+  width: 300px;
+  margin-left: 20px;
+}
+
+.add-to-cart{
+  width: 250px;
+ margin-left: 40px;
+}
+
+.product-title{
+  margin-top: 25px;
+}
+
+.product-price{
+  margin-bottom: 10px;
+  margin-left: 95px;
+}
+
+.qty{
+  margin-left: 90px;
+}
+/*
+table{
+  width: 100%;
+}
+thead{
+  display: none;
+}
+tr :nth-of-type(2n){
+  background-color: inherit;
+}
+
+tr td:first-child{
+  background: #f0f0f0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+tbody td{
+  display: block;
+  text-align: center;
+}
+
+tbody td:before{
+  content: attr(data-th);
+  display: block;
+  text-align: center;
+}*/
+
+.last-step .form p{
+  margin-left: 30px;
+  width: 300px;
+  font-size: 100%;
+}
+
+.last-step .form h3{
+  margin-left: 30px;
+  width: 300px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.form-group{
+  margin-left: 20px;
+  width: 290px;
+}
+
+.resume-product img{
+  margin-right: 10px;
+}
+
+.resume-title{
+  line-height: 20px;
+  width: 150px;
 }
 
 
@@ -1100,8 +1185,8 @@ footer{
    align-items: center;
  }
  .card-categoria {
-  height: 444px;
-  width: 300px;
+  height: 480px;
+  width: 335px;
   margin: 20px ; 
 }
 /*FORMULARIO*/
