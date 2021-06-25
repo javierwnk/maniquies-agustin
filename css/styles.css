@@ -997,14 +997,26 @@ form{
   flex-direction: column;
   align-items: center;
 }
+
+.product-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .product-images img{
-  width: 300px;
-  margin-left: 20px;
+  width: 335px; 
 }
 
+.slider-gallery{
+  justify-content: space-around;
+  align-self:stretch;
+}
+
+
+
 .add-to-cart{
-  width: 250px;
- margin-left: 40px;
+  width: 90%;
+  margin-left: 20px;
 }
 
 .product-title{
@@ -1013,12 +1025,39 @@ form{
 
 .product-price{
   margin-bottom: 10px;
-  margin-left: 95px;
+  margin-left: 10px;
+}
+
+.product-info .product-title{
+  margin-left: 10px;
 }
 
 .qty{
-  margin-left: 90px;
+  display:flex;
+  flex-direction: row;
+  margin-left: 10px;
+  width: fit-content;
 }
+
+.qty p {
+  margin-right: 10px;
+}
+
+.qty button{
+  height: 25px;
+  margin-top: 8px;
+}
+
+#quantityInput{
+  height: 25px;
+  margin-top: 8px;
+}
+
+#description{
+  margin-left: 15px;
+}
+
+
 /*
 table{
   width: 100%;
@@ -1047,6 +1086,10 @@ tbody td:before{
   text-align: center;
 }*/
 
+.last-step .form{
+  width: 100%;
+}
+
 .last-step .form p{
   margin-left: 30px;
   width: 300px;
@@ -1060,18 +1103,22 @@ tbody td:before{
   font-weight: bold;
 }
 
+
 .form-group{
   margin-left: 20px;
-  width: 290px;
+  width: 90%;
 }
 
+.resume{
+  margin-left: 20px;
+}
 .resume-product img{
   margin-right: 10px;
 }
 
 .resume-title{
   line-height: 20px;
-  width: 150px;
+  width: 130px;
 }
 
 
