@@ -997,9 +997,21 @@ form{
   flex-direction: column;
   align-items: center;
 }
-.product-images img{
-  width: 335px;
+
+.product-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.product-images img{
+  width: 335px; 
+}
+
+.slider-gallery{
+  justify-content: space-around;
+  align-self:stretch;
+}
+
 
 
 .add-to-cart{
@@ -1039,6 +1051,10 @@ form{
 #quantityInput{
   height: 25px;
   margin-top: 8px;
+}
+
+#description{
+  margin-left: 15px;
 }
 
 
