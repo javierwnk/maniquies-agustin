@@ -62,7 +62,6 @@ const deleteProducto = (index) => {
     carrito.splice(index, 1) // elimino el producto del array
     listado = ""
     totalCarrito = 0
-    debugger
     localStorage.setItem("carrito",JSON.stringify(carrito))
     if (localStorage.getItem("carrito") == "[]")
     localStorage.removeItem("carrito")
@@ -74,13 +73,16 @@ const deleteProducto = (index) => {
 
 const displayResume = () => {
 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
     let resumenTotal = 0
     let listadoResumen = "<h3>Resumen del pedido</h3>"
 
     carrito.forEach(producto => {
         resumenTotal += Number(producto.price) * Number(producto.cantidad)
         listadoResumen += `<div class="resume-product">
-                            <img src="${producto.image}">
+                            <div><img src="${producto.image}"></div>
                             <div class="resume-details align-middle">
                                 <p class="resume-title">${producto.name}</p>
                                 <p class="grey resume-price">Subtotal: $${producto.price * producto.cantidad}</p>
