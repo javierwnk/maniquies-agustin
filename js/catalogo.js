@@ -88,26 +88,27 @@ const listarProductos = data => {
         data.forEach(doc => {
             const product = doc.data()
             const card = `
-            <a href="producto.html?id=${doc.id}">
-                <div class="product-card">
-                
-                <div class="image-content">
-                    <div class="product-card-image">
-                    <img src="${product.image}" alt="${product.name}" />
+            <div class="product-card-container">
+                <a href="producto.html?id=${doc.id}">
+                    <div class="product-card">
+                    
+                    <div class="image-content">
+                        <div class="product-card-image">
+                        <img src="${product.image}" alt="${product.name}" />
+                        </div>
+                    </div>
+                    
+                    <div class="product-card-content">
+                        <p class="body-card">
+                        ${product.name}
+                        </p>
+                        <p class="body-price">
+                            $${product.price}
+                        </p>
                     </div>
                 </div>
-                
-                <div class="product-card-content">
-                    <p class="body-card">
-                    ${product.name}
-                    </p>
-                    <p class="body-price">
-                        $${product.price}
-                    </p>
-                </div>
-            </div>
-        </a>
-
+            </a>
+        </div>
             `
 
             html += card

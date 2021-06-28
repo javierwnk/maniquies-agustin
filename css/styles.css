@@ -229,6 +229,7 @@ nav {
     width: 85%;
     margin-top: 18px; }
 
+
   .product-card {
     width: 260px;
     height: fit-content;
@@ -237,7 +238,7 @@ nav {
   }
 
   .product-card-image {
-    width: 260px;
+    width: inherit;
     height: fit-content;
   }
 
@@ -791,6 +792,9 @@ td, .center {
  .info{
    margin-top:50px;
  }
+
+
+
  .card-list{
    display: flex;
    flex-direction: column;
@@ -802,6 +806,8 @@ td, .center {
   margin: 20px ; 
 
 }
+
+
 /*FORMULARIO*/
 form{
   width: 300px;
@@ -1247,5 +1253,12 @@ footer{
     width: 300px;
     margin: 20px ; 
   
+  }
+}
+
+@media all and (max-width: 425px) {
+  .product-card {
+    width: 85%;
+    margin: 0 auto 88px auto;
   }
 }
