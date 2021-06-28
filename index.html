@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
     <script defer src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script defer src="./js/contact.js"></script>
     <script defer src="./js/menu-mobile.js"></script>
@@ -22,105 +22,67 @@
     <header class="container-fluid">
         <div class="container head header-desktop">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button"
-                    aria-expanded="false">
+                <button  class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto"
-                        alt="Logo Maniquies Agustin"></a></a>
+                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav mx-auto">
                         <li class="navbar-item active">
                             <a href="index.html" class="nav-link">Inicio</a>
                         </li>
                         <li class="navbar-item active dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                data-target="desplegable">Productos<span class="iconify"
-                                    data-icon="ant-design:caret-down-outlined"></span></a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable">Productos<span class="iconify" data-icon="ant-design:caret-down-outlined"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-submenu"><a href="#"
-                                        class="dropdown-item dropdown-toggle">Maniquies<span class="iconify"
-                                            data-icon="ant-design:caret-right-outlined"></span></a>
+                                <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Maniquies<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-item"> Maniquíes</li>
                                         <div class="dropdown-divider"></div>
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <ul class="mega-Menu">
-                                                    <li class="dropdown-item"><b>Mujer</b></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=1&mainCategory=maniquies'
-                                                            class="dropdown-item">Cuerpo completo</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=2&mainCategory=maniquies'
-                                                            class="dropdown-item">Colgante</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=3&mainCategory=maniquies'
-                                                            class="dropdown-item">Bustos</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=4&mainCategory=maniquies'
-                                                            class="dropdown-item">Lenceria</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=5&mainCategory=maniquies'
-                                                            class="dropdown-item">Cabeza</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=6&mainCategory=maniquies'
-                                                            class="dropdown-item">Piernas</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&secondCategory=7&mainCategory=maniquies'
-                                                            class="dropdown-item">Fibra de Vidrio</a></li>
-                                                    <li><a href='catalogo.html?gender=mujer&mainCategory=maniquies'
-                                                            class="dropdown-item">Ver todo en mujer</a></li>
-                                                </ul>
-                                                <a href="catalogo.html?gender=ninos&mainCategory=maniquies"
-                                                    class="dropdown-item Item-1"><b>Niños</b></a>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul class="mega-Menu">
-                                                    <li class="dropdown-item"><b>Hombre</b></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=1&mainCategory=maniquies'
-                                                            class="dropdown-item">Cuerpo completo</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=2&mainCategory=maniquies'
-                                                            class="dropdown-item">Colgante</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=3&mainCategory=maniquies'
-                                                            class="dropdown-item">Bustos</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=4&mainCategory=maniquies'
-                                                            class="dropdown-item">Lenceria</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=5&mainCategory=maniquies'
-                                                            class="dropdown-item">Cabeza</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=6&mainCategory=maniquies'
-                                                            class="dropdown-item">Piernas</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&secondCategory=7&mainCategory=maniquies'
-                                                            class="dropdown-item">Fibra de Vidrio</a></li>
-                                                    <li><a href='catalogo.html?gender=hombre&mainCategory=maniquies'
-                                                            class="dropdown-item">Ver todo en hombre</a></li>
-                                                </ul>
-                                                <a href="catalogo.html?mainCategory=maniquies"
-                                                    class="dropdown-item Item-1"><b>Ver todo en Maniquies</b></a>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <ul class="mega-Menu">
+                                                <li class="dropdown-item"><b>Mujer</b></li>
+                                                <li><a href='catalogo.html?gender=mujer&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
+                                                <li><a href='catalogo.html?gender=mujer&secondCategory=2&mainCategory=maniquies' class="dropdown-item">Colgante</a></li>
+                                                <li><a href='catalogo.html?gender=mujer&secondCategory=4&mainCategory=maniquies' class="dropdown-item">Lenceria</a></li>
+                                                <li><a href='catalogo.html?gender=mujer&secondCategory=5&mainCategory=maniquies' class="dropdown-item">Cabeza</a></li>
+                                                <li><a href='catalogo.html?gender=mujer&secondCategory=6&mainCategory=maniquies' class="dropdown-item">Piernas</a></li>
+                                                <li><a href='catalogo.html?gender=mujer&mainCategory=maniquies' class="dropdown-item">Ver todo en mujer</a></li>
+                                            </ul>
+                                           <a href="catalogo.html?gender=ninos&mainCategory=maniquies" class="dropdown-item Item-1"><b>Niños</b></a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="mega-Menu">
+                                                <li class="dropdown-item"><b>Hombre</b></li>
+                                                <li><a href='catalogo.html?gender=hombre&secondCategory=1&mainCategory=maniquies' class="dropdown-item">Cuerpo completo</a></li>
+                                                <li><a href='catalogo.html?gender=hombre&secondCategory=2&mainCategory=maniquies' class="dropdown-item">Colgante</a></li>
+                                                <li><a href='catalogo.html?gender=hombre&secondCategory=4&mainCategory=maniquies' class="dropdown-item">Lenceria</a></li>
+                                                <li><a href='catalogo.html?gender=hombre&secondCategory=5&mainCategory=maniquies' class="dropdown-item">Cabeza</a></li>
+                                                <li><a href='catalogo.html?gender=hombre&secondCategory=6&mainCategory=maniquies' class="dropdown-item">Piernas</a></li>
+                                                <li><a href='catalogo.html?gender=hombre&mainCategory=maniquies' class="dropdown-item">Ver todo en hombre</a></li>
+                                            </ul>
+                                            <a href="catalogo.html?mainCategory=maniquies"class="dropdown-item Item-1"><b>Ver todo en Maniquies</b></a>
+                                        </div>
                                         </div>
                                     </ul>
                                 </li>
                                 <li><a href="catalogo.html?mainCategory=modistas" class="dropdown-item">Modista</a></li>
-                                <li class="dropdown-submenu"><a href="#"
-                                        class="dropdown-item dropdown-toggle">Equipamiento comercial<span
-                                            class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
+                                <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Equipamiento comercial<span class="iconify" data-icon="ant-design:caret-right-outlined"></span></a>
                                     <ul class="dropdown-menu heightMenu">
                                         <li class="dropdown-item">Equipamiento Comercial</li>
                                         <div class="dropdown-divider"></div>
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <ul class="mega-Menu">
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=8"
-                                                            class="dropdown-item">Perchas</a></li>
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=9"
-                                                            class="dropdown-item">Percheros</a></li>
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=10"
-                                                            class="dropdown-item">Portacarteras</a></li>
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=11"
-                                                            class="dropdown-item">Mensulas</a></li>
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=12"
-                                                            class="dropdown-item">Ganchos S</a></li>
-                                                    <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=13"
-                                                            class="dropdown-item">Cajas Registradora</a></li>
-                                                </ul>
-                                                <a href="catalogo.html?mainCategory=equipamiento"
-                                                    class="dropdown-item Item-2"><b>Ver todo en equipamiento
-                                                        comercial</b></a>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <ul class="mega-Menu">
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=8" class="dropdown-item">Perchas</a></li>
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=9"  class="dropdown-item">Percheros</a></li>
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=10"  class="dropdown-item">Portacarteras</a></li>
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=11"  class="dropdown-item">Mensulas</a></li>
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=12"  class="dropdown-item">Ganchos S</a></li>
+                                                <li><a href="catalogo.html?mainCategory=equipamiento&secondCategory=13"  class="dropdown-item">Cajas Registradora</a></li>
+                                            </ul>
+                                           <a href="catalogo.html?mainCategory=equipamiento" class="dropdown-item Item-2"><b>Ver todo en equipamiento comercial</b></a>
+                                        </div>
                                     </ul>
                                 </li>
                                 <li><a href="catalogo.html?all=true" class="dropdown-item">Ver todo</a></li>
@@ -137,22 +99,19 @@
                         </li>
                     </ul>
                 </div>
-                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined"
-                        height="22px"></span></a>
+                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
             </nav>
         </div>
 
         <div class="container header-mobile">
             <div class="hamburger" id="hamburger">
-                <span class="iconify cart-icon" data-icon="ant-design:menu-outlined" height="22px"></span>
+               <span class="iconify cart-icon" data-icon="ant-design:menu-outlined" height="22px"></span>
             </div>
             <div class="header-mobile-logo">
-                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto"
-                        alt="Logo Maniquies Agustin"></a></a>
+                <a href="index.html"><img src="./images/logo.png" width="158px" height="auto" alt="Logo Maniquies Agustin"></a></a>
             </div>
             <div class="carrito-mobile">
-                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined"
-                        height="22px"></span></a>
+                <a href="carrito.html"><span class="iconify cart-icon" data-icon="ant-design:shopping-cart-outlined" height="22px"></span></a>
             </div>
         </div>
 
@@ -161,7 +120,6 @@
 
         </div>
     </header>
-
     <main id="main">
         <div class="container-fluid cartel-info">
             <div class="shipping">

@@ -6,7 +6,7 @@ const closeMenu = () => {
 
 const maniquiesMenu = id => {
 
-    const categorias = ["Cuerpo completo", "Colgante", "Bustos", "Lenceria", "Cabeza", "Piernas", "Fibra de vidrio"]
+    const categorias = ["Cuerpo completo", "Colgante", "Lenceria", "Cabeza", "Piernas"]
     let html = `<div class="mobile-menu-action">
         <p onclick="subcategoryMenu(1)">Volver</p>
     </div>`
