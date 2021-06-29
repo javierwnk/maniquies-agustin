@@ -567,6 +567,16 @@ footer div nav ul li{
 
 /*VIEW SOBRE NOSOTROS*/
 
+.photo-size{
+  width: 100px;
+  height: 100px;
+}
+
+.carousel .carousel-inner .carousel-item img{
+  width:543px;
+  height: 420px;
+}
+
 .carousel-indicators li{
   border-radius: 100%;
   background-color:#8B8B8B;
@@ -842,16 +852,16 @@ form{
   display:flex;
   flex-direction: row;
 }
-.carousel{
-  width: 350px;
-  height: 280px;
+.carousel .carousel-inner .carousel-item img{
+  width: 340px;
+  height: 240px;
 }
 .carousel-indicators li{
-  top: 200px;
+  top: 60px;
 }
 
 .show-off p {
-  margin-top: 150px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -872,6 +882,7 @@ form{
   display: flex;
   flex-direction: column-reverse;
   margin-top: 0;
+  margin-bottom: 60px;
 }
 .estilo-mapa .info{
   margin-right: 50px;
